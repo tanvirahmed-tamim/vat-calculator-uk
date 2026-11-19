@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Domestic Reverse Charge VAT Calculator for Construction</title>
+    <meta name="description" content="Calculate the deemed VAT on a domestic reverse charge supply and see the output tax, input tax and cash cost. Includes the invoice wording you need." />
+    <link rel="canonical" href="https://vatinuk.co.uk/calculators/reverse-charge.html" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="VAT in UK team" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="VAT in UK" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="Domestic Reverse Charge VAT Calculator for Construction" />
+    <meta property="og:description" content="Calculate the deemed VAT on a domestic reverse charge supply and see the output tax, input tax and cash cost. Includes the invoice wording you need." />
+    <meta property="og:url" content="https://vatinuk.co.uk/calculators/reverse-charge.html" />
+    <meta property="og:image" content="https://vatinuk.co.uk/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="VAT in UK - free UK VAT calculators and guides" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Domestic Reverse Charge VAT Calculator for Construction" />
+    <meta name="twitter:description" content="Calculate the deemed VAT on a domestic reverse charge supply and see the output tax, input tax and cash cost. Includes the invoice wording you need." />
+    <meta name="twitter:image" content="https://vatinuk.co.uk/assets/og-image.png" />
+
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='72' font-size='58' font-family='Arial, sans-serif' font-weight='bold' text-anchor='middle' fill='white'%3E%C2%A3%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vatinuk.co.uk/#organisation",
+      "name": "VAT in UK",
+      "alternateName": "VAT Calculator UK",
+      "url": "https://vatinuk.co.uk/",
+      "description": "Independent UK VAT calculators, guides and reference tables covering standard, reduced and zero rates, registration, flat rate and specialist schemes.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "knowsLanguage": "en-GB",
+      "knowsAbout": [
+        "VAT",
+        "VAT registration",
+        "VAT rates",
+        "Flat Rate Scheme",
+        "Making Tax Digital for VAT",
+        "Place of supply"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://vatinuk.co.uk/assets/og-image.png#logo",
+        "url": "https://vatinuk.co.uk/assets/og-image.png",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vatinuk.co.uk/#website",
+      "name": "VAT in UK",
+      "url": "https://vatinuk.co.uk/",
+      "inLanguage": "en-GB",
+      "publisher": {
+        "@id": "https://vatinuk.co.uk/#organisation"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vatinuk.co.uk/calculators/reverse-charge.html#webpage",
+      "url": "https://vatinuk.co.uk/calculators/reverse-charge.html",
+      "name": "Reverse charge calculator",
+      "description": "Calculate deemed VAT on domestic reverse charge supplies and see the output tax and input tax entries.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@id": "https://vatinuk.co.uk/#website"
+      },
+      "publisher": {
+        "@id": "https://vatinuk.co.uk/#organisation"
+      },
+      "dateModified": "2026-11-10",
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "HMRC: Domestic reverse charge procedure (VAT Notice 735)",
+          "url": "https://www.gov.uk/guidance/the-vat-domestic-reverse-charge-procedure-notice-735"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "HMRC: Buildings and construction (VAT Notice 708)",
+          "url": "https://www.gov.uk/guidance/buildings-and-construction-vat-notice-708"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vatinuk.co.uk/calculators/reverse-charge.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://vatinuk.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Calculators",
+          "item": "https://vatinuk.co.uk/index.html#tools"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Reverse charge calculator",
+          "item": "https://vatinuk.co.uk/calculators/reverse-charge.html"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://vatinuk.co.uk/calculators/reverse-charge.html#app",
+      "name": "Reverse charge calculator",
+      "description": "Calculate deemed VAT on domestic reverse charge supplies and see the output tax and input tax entries.",
+      "url": "https://vatinuk.co.uk/calculators/reverse-charge.html",
+      "applicationCategory": "FinanceApplication",
+      "applicationSubCategory": "Calculator",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "inLanguage": "en-GB",
+      "dateModified": "2026-11-10",
+      "publisher": {
+        "@id": "https://vatinuk.co.uk/#organisation"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP"
+      },
+      "featureList": [
+        "Deemed VAT on a reverse charge supply",
+        "Output tax and recoverable input tax",
+        "Invoice total and net cash cost"
+      ],
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "HMRC: Domestic reverse charge procedure (VAT Notice 735)",
+          "url": "https://www.gov.uk/guidance/the-vat-domestic-reverse-charge-procedure-notice-735"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "HMRC: Buildings and construction (VAT Notice 708)",
+          "url": "https://www.gov.uk/guidance/buildings-and-construction-vat-notice-708"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+  </head>
+
+  <body id="top" class="relative min-h-screen bg-slate-50 font-sans text-slate-900 antialiased">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-blue-700 focus:shadow-lg focus:outline-2 focus:outline-blue-500">
+      Skip to content
+    </a>
+
+    <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[22rem] bg-[radial-gradient(60%_100%_at_50%_0%,#dbeafe_0%,rgba(248,250,252,0)_72%)]"></div>
+
+    <header class="border-b border-slate-200/70">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4 py-4">
+          <a href="../index.html" class="flex items-center gap-2.5" aria-label="VAT in UK home">
+            <span class="grid size-9 place-items-center rounded-xl bg-blue-600 text-white shadow-sm shadow-blue-600/30">
+              <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="3" width="14" height="18" rx="2" />
+                <path d="M8 7h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h4" />
+              </svg>
+            </span>
+            <span class="leading-tight">
+              <span class="block text-sm font-semibold tracking-tight">VAT in UK</span>
+              <span class="block text-[11px] font-medium uppercase tracking-[0.14em] text-slate-500">Calculators and guides</span>
+            </span>
+          </a>
+
+          <nav class="hidden items-center gap-1 md:flex" aria-label="Primary">
+            <a href="../index.html#main" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Calculator</a>
+            <a href="../index.html#tools" aria-current="page" class="rounded-lg px-3 py-2 text-sm font-semibold text-blue-700">Tools</a>
+            <a href="../guides.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Guides</a>
+            <a href="../faqs.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">FAQs</a>
+            <a href="../about.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">About</a>
+          </nav>
+
+          <div class="hidden items-center gap-2 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-medium text-slate-600 shadow-sm lg:flex">
+            <span class="size-1.5 rounded-full bg-emerald-500" aria-hidden="true"></span>
+            Standard 20% &middot; Reduced 5% &middot; Zero 0%
+          </div>
+        </div>
+
+        <nav class="-mx-1 flex items-center gap-1 overflow-x-auto px-1 pb-3 md:hidden" aria-label="Primary mobile">
+          <a href="../index.html#main" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Calculator</a>
+          <a href="../index.html#tools" aria-current="page" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-blue-700">Tools</a>
+          <a href="../guides.html" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Guides</a>
+          <a href="../faqs.html" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">FAQs</a>
+          <a href="../about.html" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+        <nav aria-label="Breadcrumb" class="mb-6 text-xs font-medium text-slate-500 sm:mb-8">
+          <ol class="flex flex-wrap items-center gap-1.5">
+            <li class="flex items-center gap-1.5"><a href="../index.html" class="rounded-md text-blue-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Home</a></li>
+            <li class="flex items-center gap-1.5"><span aria-hidden="true" class="text-slate-300">/</span><a href="../index.html#tools" class="rounded-md text-blue-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Calculators</a></li>
+            <li class="flex items-center gap-1.5"><span aria-hidden="true" class="text-slate-300">/</span><span aria-current="page" class="text-slate-700">Reverse charge calculator</span></li>
+          </ol>
+        </nav>
+        <div class="max-w-3xl">
+          <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Specialist calculator</p>
+          <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Reverse charge calculator</h1>
+          <p class="mt-3 text-sm font-medium text-slate-500">
+            By the VAT in UK team &middot; Last reviewed 10 November 2026
+          </p>
+          <p class="mt-5 text-lg leading-relaxed text-slate-600">Under the domestic reverse charge, the supplier invoices without VAT and the customer accounts for the VAT. This calculator works out the deemed VAT and the entries behind it.</p>
+        </div>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
+          <form id="calc-form" novalidate class="min-w-0 rounded-3xl border border-slate-200 bg-white p-5 shadow-xl shadow-slate-900/5 sm:p-7">
+            <div class="space-y-5">
+                <div>
+                  <label for="amount" class="block text-sm font-semibold text-slate-700">Supplier net amount</label>
+                  <div class="relative mt-2">
+                    <span class="pointer-events-none absolute inset-y-0 left-0 grid w-10 place-items-center text-lg font-semibold text-slate-400" aria-hidden="true">&pound;</span>
+                    <input
+                      id="amount"
+                      name="amount"
+                      type="text"
+                      inputmode="decimal"
+                      autocomplete="off"
+                      spellcheck="false"
+                      value="1000.00"
+                      class="block w-full rounded-xl border border-slate-300 bg-white py-3 pl-10 pr-16 text-xl font-semibold tabular-nums text-slate-900 shadow-sm outline-none transition placeholder:text-slate-300 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/15"
+                    />
+                    <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-[10px] font-bold uppercase tracking-wider text-slate-500" aria-hidden="true">NET</span>
+                  </div>
+                  <p class="mt-1.5 text-xs text-slate-500">The net value on the supplier's invoice. The supplier does not add VAT under the domestic reverse charge.</p>
+                </div>
+                <div>
+                  <label for="rate" class="block text-sm font-semibold text-slate-700">VAT rate that would otherwise apply</label>
+                  <div class="relative mt-2">
+                    <input
+                      id="rate"
+                      name="rate"
+                      type="text"
+                      inputmode="decimal"
+                      autocomplete="off"
+                      spellcheck="false"
+                      value="20"
+                      class="block w-full rounded-xl border border-slate-300 bg-white py-3 pl-4 pr-10 text-xl font-semibold tabular-nums text-slate-900 shadow-sm outline-none transition placeholder:text-slate-300 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/15"
+                    />
+                    <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-sm font-semibold text-slate-400" aria-hidden="true">%</span>
+                  </div>
+                  <div class="mt-2 flex flex-wrap gap-1.5">
+                    <button type="button" data-rate="20" class="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">20%</button>
+                    <button type="button" data-rate="5" class="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">5%</button>
+                    <button type="button" data-rate="0" class="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">0%</button>
+                  </div>
+                </div>
+                <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                  <label for="recover" class="flex cursor-pointer items-start gap-3 text-sm font-semibold text-slate-700">
+                    <input id="recover" name="recover" type="checkbox" checked class="mt-0.5 size-4 shrink-0 rounded border-slate-300 text-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500" />
+                    <span>
+                      I can recover the deemed VAT in full
+                      <span class="mt-1 block text-xs font-normal leading-relaxed text-slate-500">
+                        Most fully taxable businesses can. Partial exemption, or use of the goods for
+                        non-business purposes, can reduce the amount recoverable.
+                      </span>
+                    </span>
+                  </label>
+                </div>
+            </div>
+            <p id="error" role="alert" class="mt-4 hidden text-xs font-medium text-red-600"></p>
+            <p class="mt-5 flex items-start gap-2 text-xs leading-relaxed text-slate-500">
+              <svg class="mt-0.5 size-4 shrink-0 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" /></svg>
+              Amounts are rounded to the nearest penny. This is an estimate, not tax advice.
+            </p>
+          </form>
+
+            <div class="flex min-w-0 flex-col gap-4 lg:sticky lg:top-6 lg:self-start">
+              <div class="rounded-2xl bg-linear-to-br from-blue-600 via-blue-700 to-indigo-800 p-6 text-white shadow-lg shadow-blue-600/20 sm:p-7">
+                <p id="main-label" class="text-xs font-semibold uppercase tracking-[0.16em] text-blue-100">Deemed VAT</p>
+                <p id="result-main" class="mt-2 text-4xl font-extrabold tracking-tight tabular-nums sm:text-5xl" aria-live="polite">&pound;0.00</p>
+                <p id="sub" class="mt-1.5 text-sm text-blue-100/90">accounted for by the customer, not charged by the supplier</p>
+
+                <dl class="mt-6 space-y-3 border-t border-white/15 pt-5 text-sm">
+                  <div class="flex items-center justify-between gap-4">
+                    <dt class="text-blue-100">Supplier net amount</dt>
+                    <dd id="net" class="font-semibold tabular-nums">&mdash;</dd>
+                  </div>
+                  <div class="flex items-center justify-between gap-4">
+                    <dt class="text-blue-100">Deemed VAT</dt>
+                    <dd id="vat" class="font-semibold tabular-nums">&mdash;</dd>
+                  </div>
+                  <div class="flex items-center justify-between gap-4">
+                    <dt class="text-blue-100">Invoice total payable</dt>
+                    <dd id="invoice" class="font-semibold tabular-nums">&mdash;</dd>
+                  </div>
+                  <div class="flex items-center justify-between gap-4">
+                    <dt class="text-blue-100">Input tax recoverable</dt>
+                    <dd id="input" class="font-semibold tabular-nums">&mdash;</dd>
+                  </div>
+                  <div class="flex items-center justify-between gap-4">
+                    <dt class="text-blue-100">Net cost after recovery</dt>
+                    <dd id="cost" class="font-semibold tabular-nums">&mdash;</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
+                <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-500">The maths</p>
+                <p id="formula" class="mt-1 font-mono text-xs leading-relaxed text-slate-600">&mdash;</p>
+              </div>
+
+              <p id="status" class="sr-only" role="status" aria-live="polite"></p>
+            </div>
+        </div>
+
+        <article class="article-body mt-12 max-w-3xl">
+          <h2>What the domestic reverse charge is</h2>
+          <p>
+            The domestic reverse charge moves the duty to account for VAT from the supplier to the
+            customer. It applies mainly to certain construction and building services supplied
+            between VAT-registered businesses that are registered for the Construction Industry
+            Scheme (CIS).
+          </p>
+          <p>
+            The supplier issues an invoice without VAT and states that the domestic reverse charge
+            applies. The customer calculates the deemed VAT, includes it as output tax on its VAT
+            return, and usually reclaims the same amount as input tax.
+          </p>
+
+          <h2>When it applies</h2>
+          <ul>
+            <li>The supply is a specified construction or building service.</li>
+            <li>The customer is VAT-registered and registered for CIS.</li>
+            <li>The customer is not the final consumer or an intermediary connected to the end user.</li>
+            <li>The supplier and customer are both in the UK for the purposes of the supply.</li>
+          </ul>
+          <p>
+            The rules are specific about which services and which customers are covered. If the
+            conditions are not met, normal VAT accounting applies and the supplier charges VAT.
+          </p>
+
+          <h2>How the calculation works</h2>
+          <p>The deemed VAT is calculated on the net invoice value at the rate that would otherwise apply:</p>
+          <p class="formula">Deemed VAT = net amount &times; rate &divide; 100</p>
+          <p>
+            On a &pound;1,000 net invoice at 20%, the deemed VAT is &pound;200. The supplier is paid
+            &pound;1,000, not &pound;1,200. The customer records &pound;200 of output tax and, where
+            full recovery applies, &pound;200 of input tax.
+          </p>
+
+          <h2>VAT return entries</h2>
+          <div class="table-wrap">
+            <table>
+              <caption>Reverse charge on a &pound;1,000 net supply at 20%</caption>
+              <thead>
+                <tr><th scope="col">Box</th><th scope="col">Entry</th><th scope="col">Amount</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Box 1</td><td>Output tax on the reverse charge</td><td>&pound;200.00</td></tr>
+                <tr><td>Box 4</td><td>Input tax, if recoverable</td><td>&pound;200.00</td></tr>
+                <tr><td>Box 6</td><td>Net value of sales</td><td>&pound;1,000.00</td></tr>
+                <tr><td>Box 7</td><td>Net value of purchases</td><td>&pound;1,000.00</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            The net cash effect is usually nil, but both entries are still required. If the customer
+            cannot recover the VAT in full, the difference becomes a real cost.
+          </p>
+
+          <h2>Invoice wording</h2>
+          <p>
+            The supplier's invoice should make the position clear. A common form of words is:
+          </p>
+          <p class="callout">
+            <strong>Reverse charge: VAT Act 1994 Section 55A applies. Customer to account for VAT.</strong>
+          </p>
+          <p>
+            The invoice shows the net amount and no VAT. Some software adds a note automatically.
+            Check that the note is present before you send the invoice, because the customer needs it
+            to account for the VAT correctly.
+          </p>
+
+          <h2>Overseas services are different</h2>
+          <p>
+            The domestic reverse charge is not the same as the reverse charge for services bought
+            from overseas suppliers. Cross-border services follow the place of supply rules, and a
+            UK business may need to account for VAT on services received from abroad. This calculator
+            is aimed at the domestic construction charge.
+          </p>
+        </article>
+
+        <section aria-labelledby="calc-faq" class="mt-12 max-w-3xl">
+          <h2 id="calc-faq" class="text-2xl font-bold tracking-tight text-slate-900">Questions</h2>
+          <div class="mt-4 divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+            <details class="group">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                Does the supplier charge VAT under the domestic reverse charge?
+                <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </summary>
+              <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">No. The supplier invoices the net amount without VAT and states that the domestic reverse charge applies. The customer accounts for the deemed VAT on its own VAT return.</div>
+            </details>
+            <details class="group">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                Is the reverse charge cash neutral?
+                <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </summary>
+              <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">For a fully taxable business that can recover all the input tax, the output tax and input tax entries offset each other, so the net cash effect is usually nil. Businesses with partial exemption may not recover it all.</div>
+            </details>
+            <details class="group">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                Which rate do I use?
+                <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </summary>
+              <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">Use the rate that would have applied if the supplier had charged VAT, normally 20% for standard-rated construction services. Reduced or zero rates apply only if the underlying supply qualifies.</div>
+            </details>
+            <details class="group">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                Does the customer pay the VAT to the supplier?
+                <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </summary>
+              <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">No. The customer pays only the net invoice amount to the supplier. The VAT is accounted for through the customer's VAT return, not paid across the invoice.</div>
+            </details>
+          </div>
+        </section>
+
+        <section aria-labelledby="calc-related" class="mt-12 max-w-3xl">
+          <h2 id="calc-related" class="text-2xl font-bold tracking-tight text-slate-900">Related tools and guides</h2>
+          <div class="mt-4 grid gap-3 sm:grid-cols-2">
+            <a href="margin-scheme.html" class="group flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              <span class="text-sm font-bold text-slate-900 group-hover:text-blue-700">Margin scheme calculator</span>
+              <span class="mt-1.5 text-xs leading-relaxed text-slate-600">VAT on the margin for second-hand goods.</span>
+            </a>
+            <a href="vat-on-expenses.html" class="group flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              <span class="text-sm font-bold text-slate-900 group-hover:text-blue-700">VAT on expenses</span>
+              <span class="mt-1.5 text-xs leading-relaxed text-slate-600">Work out recoverable input tax on a cost.</span>
+            </a>
+            <a href="../guides/vat-invoices-mtd.html" class="group flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              <span class="text-sm font-bold text-slate-900 group-hover:text-blue-700">VAT invoices and MTD</span>
+              <span class="mt-1.5 text-xs leading-relaxed text-slate-600">Invoice wording and digital records.</span>
+            </a>
+            <a href="../guides/vat-rates.html" class="group flex flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              <span class="text-sm font-bold text-slate-900 group-hover:text-blue-700">VAT rates explained</span>
+              <span class="mt-1.5 text-xs leading-relaxed text-slate-600">The rate that would otherwise apply.</span>
+            </a>
+          </div>
+        </section>
+
+        <section id="page-sources" aria-labelledby="page-sources-heading" class="mt-12 max-w-3xl border-t border-slate-200 pt-8">
+          <h2 id="page-sources-heading" class="text-lg font-bold tracking-tight text-slate-900">Sources</h2>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">
+            Rates, thresholds and rules on this page are checked against these primary sources. They open on GOV.UK, HMRC or legislation.gov.uk.
+          </p>
+          <ul class="mt-4 space-y-2.5 text-sm leading-relaxed">
+            <li>
+              <a href="https://www.gov.uk/guidance/the-vat-domestic-reverse-charge-procedure-notice-735" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">HMRC: Domestic reverse charge procedure (VAT Notice 735)</a>
+              <span class="text-slate-500">(HMRC notice)</span>
+            </li>
+            <li>
+              <a href="https://www.gov.uk/guidance/buildings-and-construction-vat-notice-708" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">HMRC: Buildings and construction (VAT Notice 708)</a>
+              <span class="text-slate-500">(HMRC notice)</span>
+            </li>
+          </ul>
+          <p class="mt-4 text-xs text-slate-500">Sources checked 13 November 2026. Not tax or legal advice.</p>
+        </section>
+
+<div class="mt-12 max-w-3xl rounded-2xl border border-blue-200 bg-blue-50 p-6">
+          <h2 class="text-base font-bold text-slate-900">Check the rule before you rely on the number</h2>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">
+            This calculator applies a standard method. Eligibility for a scheme and the correct VAT
+            treatment of a supply are legal questions. Check
+            <a href="https://www.gov.uk/browse/tax/vat" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-700 underline decoration-blue-300 underline-offset-2 hover:decoration-blue-600">the GOV.UK VAT section</a>
+            or speak to a qualified adviser before you file.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
+          <div>
+            <p class="text-sm font-bold tracking-tight text-slate-900">VAT in UK</p>
+            <p class="mt-3 max-w-xs text-xs leading-relaxed text-slate-500">
+              Free UK VAT calculators and plain-English guides. Every calculation runs in your
+              browser, with no accounts and no tracking.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Site</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="../index.html#main" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT calculator</a></li>
+              <li><a href="../index.html#tools" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT tools</a></li>
+              <li><a href="../guides.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT guides</a></li>
+              <li><a href="../faqs.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT FAQs</a></li>
+              <li><a href="../glossary.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT glossary</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Calculators</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="../calculators/vat-fraction.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT fraction</a></li>
+              <li><a href="../calculators/margin-scheme.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Margin scheme</a></li>
+              <li><a href="../calculators/reverse-charge.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Reverse charge</a></li>
+              <li><a href="../calculators/vat-on-expenses.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT on expenses</a></li>
+              <li><a href="../calculators/registration-threshold.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Registration threshold</a></li>
+              <li><a href="../calculators/bulk-vat.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Bulk VAT</a></li>
+              <li><a href="../calculators/flat-rate-scheme.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Flat Rate Scheme</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Company and legal</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="../about.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">About us</a></li>
+              <li><a href="../contact.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Contact us</a></li>
+              <li><a href="../editorial-policy.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Editorial policy</a></li>
+              <li><a href="../methodology.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Methodology</a></li>
+              <li><a href="../corrections.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Corrections log</a></li>
+              <li><a href="../privacy-policy.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Privacy policy</a></li>
+              <li><a href="../terms-and-conditions.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Terms and conditions</a></li>
+              <li><a href="../cookies-policy.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Cookies policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-col gap-3 border-t border-slate-200 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; 2026 VAT in UK. All rights reserved.</p>
+          <p>Estimates only &middot; Not tax or legal advice</p>
+          <a href="#top" class="inline-flex items-center gap-1 rounded-md font-semibold text-blue-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+            Back to top
+            <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+﻿(() => {
+  "use strict";
+
+  const gbp = new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP" });
+  const form = document.getElementById("calc-form");
+  const amountInput = document.getElementById("amount");
+  const rateInput = document.getElementById("rate");
+  const recoverInput = document.getElementById("recover");
+  const main = document.getElementById("result-main");
+  const sub = document.getElementById("sub");
+  const netOut = document.getElementById("net");
+  const vatOut = document.getElementById("vat");
+  const invoiceOut = document.getElementById("invoice");
+  const inputOut = document.getElementById("input");
+  const costOut = document.getElementById("cost");
+  const formula = document.getElementById("formula");
+  const error = document.getElementById("error");
+  const status = document.getElementById("status");
+
+  function parseAmount(raw) {
+    const cleaned = String(raw).replace(/[£,\s]/g, "");
+    if (cleaned === "") return { empty: true };
+    if (!/^\d*\.?\d*$/.test(cleaned) || cleaned === ".") return { invalid: true };
+    const value = Number(cleaned);
+    if (!Number.isFinite(value) || value < 0) return { invalid: true };
+    return { value };
+  }
+
+  function parseRate(raw) {
+    const cleaned = String(raw).trim().replace(",", ".");
+    if (cleaned === "") return { invalid: true };
+    if (!/^\d*\.?\d*$/.test(cleaned) || cleaned === ".") return { invalid: true };
+    const value = Number(cleaned);
+    if (!Number.isFinite(value) || value < 0 || value > 100) return { invalid: true };
+    return { value };
+  }
+
+  function update() {
+    error.classList.add("hidden");
+    error.textContent = "";
+
+    const amount = parseAmount(amountInput.value);
+    const rate = parseRate(rateInput.value);
+
+    if (amount.invalid || rate.invalid) {
+      error.textContent = "Enter a supplier net amount of zero or more and a rate between 0 and 100.";
+      error.classList.remove("hidden");
+      main.textContent = "\u2014";
+      sub.textContent = "Check the figures";
+      [netOut, vatOut, invoiceOut, inputOut, costOut].forEach((el) => (el.textContent = "\u2014"));
+      formula.textContent = "\u2014";
+      return;
+    }
+
+    if (amount.empty) {
+      main.textContent = "£0.00";
+      sub.textContent = "Enter the supplier's net invoice value";
+      [netOut, vatOut, invoiceOut, inputOut, costOut].forEach((el) => (el.textContent = "\u2014"));
+      formula.textContent = "Deemed VAT = net \u00d7 rate \u00f7 100";
+      return;
+    }
+
+    const netPence = Math.round(amount.value * 100);
+    const vatPence = Math.round((netPence * rate.value) / 100);
+    const recover = recoverInput.checked;
+    const inputPence = recover ? vatPence : 0;
+    const costPence = netPence + vatPence - inputPence;
+
+    main.textContent = gbp.format(vatPence / 100);
+    sub.textContent = recover
+      ? "Deemed VAT, recovered in full on the same return"
+      : "Deemed VAT, not recoverable in this example";
+
+    netOut.textContent = gbp.format(netPence / 100);
+    vatOut.textContent = gbp.format(vatPence / 100);
+    invoiceOut.textContent = gbp.format(netPence / 100);
+    inputOut.textContent = gbp.format(inputPence / 100);
+    costOut.textContent = gbp.format(costPence / 100);
+
+    formula.textContent = gbp.format(netPence / 100) + " \u00d7 " + rate.value + "% = " + gbp.format(vatPence / 100);
+    status.textContent =
+      "Deemed VAT " + gbp.format(vatPence / 100) + ", recoverable input tax " + gbp.format(inputPence / 100) + ".";
+  }
+
+  document.querySelectorAll("[data-rate]").forEach((button) => {
+    button.addEventListener("click", () => {
+      rateInput.value = button.dataset.rate;
+      update();
+    });
+  });
+
+  [amountInput, rateInput, recoverInput].forEach((el) => el.addEventListener("input", update));
+  [amountInput, rateInput, recoverInput].forEach((el) => el.addEventListener("change", update));
+  form.addEventListener("submit", (event) => event.preventDefault());
+  update();
+})();
+
+    </script>
+
+  </body>
+</html>

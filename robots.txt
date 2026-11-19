@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# No tracking, no blocked paths.
+Sitemap: https://vatinuk.co.uk/sitemap.xml

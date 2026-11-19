@@ -1,0 +1,45 @@
+UK VAT COMPLIANCE CHECKLIST
+VAT in UK
+https://vatinuk.co.uk
+Checked against GOV.UK and HMRC guidance, November 2026
+
+This checklist is a practical prompt sheet, not tax or legal advice. Check GOV.UK for the rules that apply to your business.
+
+REGISTRATION
+[ ] Add up taxable turnover for the last 12 months at the end of every month.
+[ ] Register with HMRC if the total exceeds GBP 90,000, or if you expect it to exceed GBP 90,000 in the next 30 days.
+[ ] Tell HMRC within 30 days of the end of the month in which you crossed the threshold.
+[ ] Record your VAT registration date and VAT number.
+[ ] Consider voluntary registration if you buy a lot from VAT-registered suppliers.
+[ ] Check the GBP 88,000 deregistration threshold: you can ask to cancel if you expect taxable turnover in the next 12 months to stay below it.
+
+INVOICES
+[ ] Show your business name, address and VAT number.
+[ ] Use a unique invoice number and show the tax point.
+[ ] Show the customer's name and address.
+[ ] Describe the goods or services supplied.
+[ ] Show the net total, the VAT rate and the VAT amount for each rate.
+[ ] Show the gross total.
+[ ] Use a simplified invoice only for retail supplies up to GBP 250 including VAT.
+[ ] Keep copies of invoices and credit notes issued.
+
+RECORDS AND FILING
+[ ] Keep digital records and file through Making Tax Digital software.
+[ ] Reconcile sales and purchases to the boxes on the VAT return.
+[ ] Check box 1 output tax, box 4 input tax and box 5 the difference.
+[ ] Include standard, reduced, zero-rated and exempt sales in box 6; there is no separate exempt box.
+[ ] File and pay by one calendar month and seven days after the end of the period.
+[ ] Keep VAT records for six years.
+
+INPUT TAX
+[ ] Confirm each cost is genuinely for business use.
+[ ] Hold a valid VAT invoice or receipt for every claim.
+[ ] Check for blocked costs: business entertainment of UK clients, most cars available for private use, and private spending.
+[ ] Record the business-use percentage for mixed-use costs.
+[ ] Claim input tax within four years of the return period it relates to.
+
+TOOLS AND GUIDES
+VAT calculator: https://vatinuk.co.uk
+VAT guides: https://vatinuk.co.uk/guides.html
+VAT rate card: https://vatinuk.co.uk/assets/uk-vat-rate-card.csv
+VAT rate history: https://vatinuk.co.uk/assets/uk-vat-rate-history.csv

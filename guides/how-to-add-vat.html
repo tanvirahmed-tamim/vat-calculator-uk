@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to Add VAT to a Price: 20%, 5% and Custom Rates</title>
+    <meta name="description" content="Add VAT to a net price with the correct formula, worked examples at 20% and 5%, rounding rules and a quick reference table." />
+    <link rel="canonical" href="https://vatinuk.co.uk/guides/how-to-add-vat.html" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="VAT in UK team" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="VAT in UK" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="How to Add VAT to a Price: 20%, 5% and Custom Rates" />
+    <meta property="og:description" content="Add VAT to a net price with the correct formula, worked examples at 20% and 5%, rounding rules and a quick reference table." />
+    <meta property="og:url" content="https://vatinuk.co.uk/guides/how-to-add-vat.html" />
+    <meta property="og:image" content="https://vatinuk.co.uk/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="VAT in UK - free UK VAT calculators and guides" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How to Add VAT to a Price: 20%, 5% and Custom Rates" />
+    <meta name="twitter:description" content="Add VAT to a net price with the correct formula, worked examples at 20% and 5%, rounding rules and a quick reference table." />
+    <meta name="twitter:image" content="https://vatinuk.co.uk/assets/og-image.png" />
+    <meta property="article:published_time" content="2026-11-10" />
+        <meta property="article:modified_time" content="2026-11-19" />
+        <meta property="article:section" content="Calculation" />
+
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='72' font-size='58' font-family='Arial, sans-serif' font-weight='bold' text-anchor='middle' fill='white'%3E%C2%A3%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vatinuk.co.uk/#organisation",
+      "name": "VAT in UK",
+      "alternateName": "VAT Calculator UK",
+      "url": "https://vatinuk.co.uk/",
+      "description": "Independent UK VAT calculators, guides and reference tables covering standard, reduced and zero rates, registration, flat rate and specialist schemes.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "knowsLanguage": "en-GB",
+      "knowsAbout": [
+        "VAT",
+        "VAT registration",
+        "VAT rates",
+        "Flat Rate Scheme",
+        "Making Tax Digital for VAT",
+        "Place of supply"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://vatinuk.co.uk/assets/og-image.png#logo",
+        "url": "https://vatinuk.co.uk/assets/og-image.png",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vatinuk.co.uk/#website",
+      "name": "VAT in UK",
+      "url": "https://vatinuk.co.uk/",
+      "inLanguage": "en-GB",
+      "publisher": {
+        "@id": "https://vatinuk.co.uk/#organisation"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://vatinuk.co.uk/#team",
+      "name": "VAT in UK team",
+      "url": "https://vatinuk.co.uk/about.html",
+      "description": "The editorial team that writes and reviews the VAT in UK guides, worked examples and reference tables.",
+      "parentOrganization": {
+        "@id": "https://vatinuk.co.uk/#organisation"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vatinuk.co.uk/guides/how-to-add-vat.html#webpage",
+      "url": "https://vatinuk.co.uk/guides/how-to-add-vat.html",
+      "name": "How to Add VAT to a Price: 20%, 5% and Custom Rates",
+      "description": "Add VAT to a net price with the correct formula, worked examples at 20% and 5%, rounding rules and a quick reference table.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@id": "https://vatinuk.co.uk/#website"
+      },
+      "publisher": {
+        "@id": "https://vatinuk.co.uk/#organisation"
+      },
+      "dateModified": "2026-11-19",
+      "mainEntity": {
+        "@id": "https://vatinuk.co.uk/guides/how-to-add-vat.html#article"
+      },
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "HMRC: VAT guide (VAT Notice 700)",
+          "url": "https://www.gov.uk/guidance/vat-guide-notice-700"
+        },
+        {
+          "@type": "Legislation",
+          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 2 (rate of VAT)",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/2"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "GOV.UK: VAT rates",
+          "url": "https://www.gov.uk/vat-rates"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://vatinuk.co.uk/guides/how-to-add-vat.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://vatinuk.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://vatinuk.co.uk/guides.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "VAT calculation",
+          "item": "https://vatinuk.co.uk/guides/vat-calculation.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "How to Add VAT to a Price: 20%, 5% and Custom Rates",
+          "item": "https://vatinuk.co.uk/guides/how-to-add-vat.html"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://vatinuk.co.uk/guides/how-to-add-vat.html#article",
+      "headline": "How to Add VAT to a Price: 20%, 5% and Custom Rates",
+      "description": "Add VAT to a net price with the correct formula, worked examples at 20% and 5%, rounding rules and a quick reference table.",
+      "url": "https://vatinuk.co.uk/guides/how-to-add-vat.html",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://vatinuk.co.uk/guides/how-to-add-vat.html#webpage"
+      },
+      "datePublished": "2026-11-10",
+      "dateModified": "2026-11-19",
+      "inLanguage": "en-GB",
+      "author": {
+        "@id": "https://vatinuk.co.uk/#team"
+      },
+      "publisher": {
+        "@id": "https://vatinuk.co.uk/#organisation"
+      },
+      "image": "https://vatinuk.co.uk/assets/og-image.png",
+      "isPartOf": {
+        "@id": "https://vatinuk.co.uk/guides/vat-calculation.html#webpage"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Value-added tax"
+        },
+        {
+          "@type": "Thing",
+          "name": "Invoice"
+        },
+        {
+          "@type": "Thing",
+          "name": "Rounding"
+        }
+      ],
+      "mentions": [
+        {
+          "@type": "WebPage",
+          "@id": "https://vatinuk.co.uk/guides/how-to-remove-vat.html#webpage",
+          "name": "How to remove VAT"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vatinuk.co.uk/guides/vat-rates.html#webpage",
+          "name": "VAT rates explained"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://vatinuk.co.uk/guides/vat-invoices-mtd.html#webpage",
+          "name": "VAT invoices and MTD"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "HMRC: VAT guide (VAT Notice 700)",
+          "url": "https://www.gov.uk/guidance/vat-guide-notice-700"
+        },
+        {
+          "@type": "Legislation",
+          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 2 (rate of VAT)",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/2"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "GOV.UK: VAT rates",
+          "url": "https://www.gov.uk/vat-rates"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://vatinuk.co.uk/guides/how-to-add-vat.html#faq",
+      "isPartOf": {
+        "@id": "https://vatinuk.co.uk/guides/how-to-add-vat.html#webpage"
+      },
+      "inLanguage": "en-GB",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I add VAT before or after a discount?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apply the discount to the net price first, then add VAT to the discounted amount. VAT is charged on the price the customer actually pays, so a 10% discount on a £100 net price leaves £90 net and £108 gross at 20%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I round VAT per line or on the invoice total?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pick one method per invoice and apply it consistently. Retailers must not round the VAT figure down, but may round each calculation up or down to the nearest penny. Businesses issuing VAT invoices to other businesses may use the Notice 700 paragraph 17.5 concession and round the total VAT down to a whole penny."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which rate do I add?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use the rate that applies to the supply at the tax point. Most goods and services are standard rated at 20%, some are reduced at 5%, and zero-rated supplies use a multiplier of 1.00."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+  </head>
+
+  <body id="top" class="relative min-h-screen bg-slate-50 font-sans text-slate-900 antialiased">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-blue-700 focus:shadow-lg focus:outline-2 focus:outline-blue-500">
+      Skip to content
+    </a>
+
+    <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[22rem] bg-[radial-gradient(60%_100%_at_50%_0%,#dbeafe_0%,rgba(248,250,252,0)_72%)]"></div>
+
+    <header class="border-b border-slate-200/70">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4 py-4">
+          <a href="../index.html" class="flex items-center gap-2.5" aria-label="VAT in UK home">
+            <span class="grid size-9 place-items-center rounded-xl bg-blue-600 text-white shadow-sm shadow-blue-600/30">
+              <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="3" width="14" height="18" rx="2" />
+                <path d="M8 7h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h4" />
+              </svg>
+            </span>
+            <span class="leading-tight">
+              <span class="block text-sm font-semibold tracking-tight">VAT in UK</span>
+              <span class="block text-[11px] font-medium uppercase tracking-[0.14em] text-slate-500">Calculators and guides</span>
+            </span>
+          </a>
+
+          <nav class="hidden items-center gap-1 md:flex" aria-label="Primary">
+            <a href="../index.html#main" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Calculator</a>
+            <a href="../index.html#tools" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Tools</a>
+            <a href="../guides.html" aria-current="page" class="rounded-lg px-3 py-2 text-sm font-semibold text-blue-700">Guides</a>
+            <a href="../faqs.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">FAQs</a>
+            <a href="../about.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">About</a>
+          </nav>
+
+          <div class="hidden items-center gap-2 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-medium text-slate-600 shadow-sm lg:flex">
+            <span class="size-1.5 rounded-full bg-emerald-500" aria-hidden="true"></span>
+            Standard 20% &middot; Reduced 5% &middot; Zero 0%
+          </div>
+        </div>
+
+        <nav class="-mx-1 flex items-center gap-1 overflow-x-auto px-1 pb-3 md:hidden" aria-label="Primary mobile">
+          <a href="../index.html#main" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Calculator</a>
+          <a href="../index.html#tools" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Tools</a>
+          <a href="../guides.html" aria-current="page" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-blue-700">Guides</a>
+          <a href="../faqs.html" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">FAQs</a>
+          <a href="../about.html" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+        <nav aria-label="Breadcrumb" class="mb-6 text-xs font-medium text-slate-500 sm:mb-8">
+          <ol class="flex flex-wrap items-center gap-1.5">
+            <li class="flex items-center gap-1.5"><a href="../index.html" class="rounded-md text-blue-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Home</a></li>
+            <li class="flex items-center gap-1.5"><span aria-hidden="true" class="text-slate-300">/</span><a href="../guides.html" class="rounded-md text-blue-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Guides</a></li>
+            <li class="flex items-center gap-1.5"><span aria-hidden="true" class="text-slate-300">/</span><a href="../guides/vat-calculation.html" class="rounded-md text-blue-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT calculation</a></li>
+            <li class="flex items-center gap-1.5"><span aria-hidden="true" class="text-slate-300">/</span><span aria-current="page" class="text-slate-700">How to Add VAT to a Price: 20%, 5% and Custom Rates</span></li>
+          </ol>
+        </nav>
+        <div class="max-w-3xl">
+          <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Calculation</p>
+          <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">How to Add VAT to a Price: 20%, 5% and Custom Rates</h1>
+          <p class="mt-3 text-sm font-medium text-slate-500">
+            By the VAT in UK team &middot; Last reviewed 19 November 2026 &middot; 5 min read
+          </p>
+          <p class="mt-4 text-xs font-medium text-slate-500">
+            Part of <a href="vat-calculation.html" class="rounded-md font-semibold text-blue-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT calculation</a>
+          </p>
+          <p class="mt-5 text-lg leading-relaxed text-slate-600">Adding VAT is a single multiplication, but small rounding choices can change the figure on an invoice. This guide sets out the VAT formula, a net to gross example and the 20% VAT method, with worked cases.</p>
+
+          <div class="mt-6 rounded-xl border border-blue-200 bg-blue-50 p-5">
+            <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-700">In short</p>
+            <p class="mt-2 text-sm leading-relaxed text-slate-700">Multiply the net amount by 1 plus the rate as a decimal. At 20%, multiply by 1.20; at 5%, multiply by 1.05. Round the VAT to the nearest penny, then add it to the net. Different rounding rules apply to retailers and to businesses issuing VAT invoices.</p>
+          </div>
+
+        </div>
+
+        <div class="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_15rem]">
+          <article class="article-body min-w-0 max-w-3xl">
+            <h2 id="formula">The formula</h2>
+            <p>To add VAT to a net amount:</p>
+            <p class="formula">Gross = Net &times; (1 + rate &divide; 100)</p>
+            <p>
+              The bracket converts the percentage into a multiplier. At 20% it is 1.20; at 5% it is
+              1.05; at 0% it is 1.00.
+            </p>
+            <p>
+              The VAT element is simply the gross minus the net, or equivalently
+              <strong>Net &times; rate &divide; 100</strong>.
+            </p>
+
+            <h2 id="examples">Worked examples</h2>
+            <h3>Standard rate at 20%</h3>
+            <p>
+              A consultancy invoice has a net value of &pound;250. Multiply by 1.20 to get
+              &pound;300. The VAT is &pound;50 and the gross is &pound;300.
+            </p>
+            <h3>Reduced rate at 5% on domestic gas</h3>
+            <p>
+              A domestic gas bill has a net value of &pound;80. Multiply by 1.05 to get
+              &pound;84. The VAT is &pound;4.
+            </p>
+            <p>
+              Domestic electricity in Great Britain is different at the moment: qualifying supplies
+              are temporarily zero-rated from 1 October 2026 to 30 June 2027, so the multiplier is
+              1.00. Northern Ireland electricity stays at 5%, and gas and other domestic fuels stay
+              at 5% across the UK. Read
+              <a href="vat-on-energy.html">VAT on energy</a> for the detail.
+            </p>
+            <h3>A price with pence</h3>
+            <p>
+              A net price of &pound;49.99 at 20% produces VAT of &pound;9.998 before rounding. Normal
+              rounding to the nearest penny gives &pound;10.00 and a gross of &pound;59.99. An invoice
+              trader using the Notice 700 paragraph 17.5 concession may instead round the VAT down
+              to &pound;9.99, making the gross &pound;59.98.
+            </p>
+            <h3>Zero rate</h3>
+            <p>
+              Zero-rated supplies, such as most plain food, have a multiplier of 1.00. The gross
+              equals the net and the VAT is &pound;0.00, but the supply is still taxable and belongs
+              on the VAT return.
+            </p>
+
+            <h2 id="rounding">Rounding</h2>
+            <p>
+              HMRC applies two different rules, and mixing them up is the usual cause of a penny
+              dispute with a customer.
+            </p>
+            <ul>
+              <li>
+                <strong>Retailers</strong> calculating VAT at line or invoice level must not round
+                the VAT figure down. They may round each individual calculation up or down to the
+                nearest penny (VAT Notice 700, paragraph 17.6).
+              </li>
+              <li>
+                <strong>Businesses issuing VAT invoices to other businesses</strong> may use the
+                concession in VAT Notice 700, paragraph 17.5: round the total VAT payable on the
+                invoice down to a whole penny and ignore any fraction. The concession is designed
+                for invoice traders and only applies where the VAT charged to the customer is the
+                same VAT paid to HMRC.
+              </li>
+            </ul>
+            <p>
+              Pick one method for an invoice and apply it to every line. Keep a note of the method
+              used so a later check can reproduce the figures.
+            </p>
+            <h3>Why per-line and per-total rounding differ</h3>
+            <p>Take five lines at &pound;1.12 net each, all at 20%:</p>
+            <div class="table-wrap">
+              <table>
+                <caption>Five lines at &pound;1.12 net, 20% VAT</caption>
+                <thead>
+                  <tr><th scope="col">Method</th><th scope="col">Calculation</th><th scope="col">VAT</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Per line</td><td>&pound;0.224 rounded to &pound;0.22 &times; 5</td><td>&pound;1.10</td></tr>
+                  <tr><td>On the total</td><td>&pound;5.60 net &times; 20%</td><td>&pound;1.12</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              The 2p gap is not an error in either method. It is the reason not to switch methods
+              part-way through an invoice.
+            </p>
+
+            <h2 id="invoice">On an invoice</h2>
+            <p>A VAT invoice needs to show the rate and the VAT amount clearly. A simple layout:</p>
+            <div class="table-wrap">
+              <table>
+                <caption>Example invoice totals at 20%</caption>
+                <thead>
+                  <tr><th scope="col">Description</th><th scope="col">Net</th><th scope="col">VAT rate</th><th scope="col">VAT</th><th scope="col">Gross</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Design work</td><td>&pound;250.00</td><td>20%</td><td>&pound;50.00</td><td>&pound;300.00</td></tr>
+                  <tr><td>Printed book</td><td>&pound;20.00</td><td>0%</td><td>&pound;0.00</td><td>&pound;20.00</td></tr>
+                  <tr><td><strong>Total</strong></td><td><strong>&pound;270.00</strong></td><td></td><td><strong>&pound;50.00</strong></td><td><strong>&pound;320.00</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              If you use accounting software, it will normally apply the rounding for you. Check
+              the first few invoices against a manual calculation before you rely on it.
+            </p>
+
+            <h2 id="mistakes">Common mistakes</h2>
+            <ul>
+              <li><strong>Adding 20p per pound instead of 20%.</strong> VAT is a percentage of the net, not a fixed cash amount.</li>
+              <li><strong>Applying the rate to the gross.</strong> Adding VAT starts from the net figure.</li>
+              <li><strong>Assuming every sale is 20%.</strong> Domestic gas and other domestic fuel is 5%, most food is 0%, and some residential renovations and conversions are 5%.</li>
+              <li><strong>Treating zero-rated as exempt.</strong> Zero-rated supplies still go on the return and usually allow input VAT recovery.</li>
+              <li><strong>Mixing rates on one line.</strong> Group lines by rate before calculating the VAT.</li>
+            </ul>
+
+            <h2 id="reference">Quick reference</h2>
+            <div class="table-wrap">
+              <table>
+                <caption>Multipliers and VAT fractions by rate</caption>
+                <thead>
+                  <tr><th scope="col">Rate</th><th scope="col">Multiply net by</th><th scope="col">VAT fraction of gross</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>20% standard</td><td>1.20</td><td>1/6</td></tr>
+                  <tr><td>5% reduced</td><td>1.05</td><td>1/21</td></tr>
+                  <tr><td>0% zero</td><td>1.00</td><td>0</td></tr>
+                  <tr><td>17.5% (historical, pre-2011)</td><td>1.175</td><td>7/47</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              17.5% was the standard rate from 1991 to 2010, apart from the temporary 15% cut in
+              2008&ndash;09. It is not a current rate and should only appear on old invoices or
+              credit notes for those periods.
+            </p>
+            <p>
+              The <a href="../index.html#main">VAT calculator</a> applies these multipliers and rounds
+              to the penny as you type. To go the other way, read
+              <a href="how-to-remove-vat.html">how to remove VAT from a gross price</a>.
+            </p>
+            <h2 id="related-terms">Related terms</h2>
+            <p>
+<a href="../glossary.html#vat-fraction">VAT fraction</a>, <a href="../glossary.html#standard-rate">Standard rate</a>, <a href="../glossary.html#output-tax">Output tax</a>.
+            </p>
+          </article>
+
+          <aside class="min-w-0 space-y-4 lg:sticky lg:top-6 lg:self-start">
+            <div class="rounded-xl border border-slate-200 bg-white p-5">
+              <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">On this page</h2>
+              <ul class="mt-3 space-y-2 text-sm">
+                <li><a href="#formula" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">The formula</a></li>
+                <li><a href="#examples" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Worked examples</a></li>
+                <li><a href="#rounding" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Rounding</a></li>
+                <li><a href="#invoice" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">On an invoice</a></li>
+                <li><a href="#mistakes" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Common mistakes</a></li>
+                <li><a href="#reference" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Quick reference</a></li>
+                <li><a href="#related-terms" class="rounded-md text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Related terms</a></li>
+              </ul>
+            </div>
+
+            <div class="rounded-xl bg-slate-900 p-5 text-white">
+              <p class="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">Try it</p>
+              <p class="mt-2 text-sm font-semibold">Open the VAT calculator</p>
+              <p class="mt-1 text-xs leading-relaxed text-slate-300">Add or remove VAT at any rate and see the net, VAT and gross breakdown.</p>
+              <a href="../index.html#main" class="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-blue-300 underline decoration-blue-500/40 underline-offset-2 hover:decoration-blue-300">
+                Open tool <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+
+        <section aria-labelledby="guide-faq" class="mt-12 max-w-3xl">
+          <h2 id="guide-faq" class="text-2xl font-bold tracking-tight text-slate-900">Questions</h2>
+          <div class="mt-4 divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+            <details class="group">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                Do I add VAT before or after a discount?
+                <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </summary>
+              <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">Apply the discount to the net price first, then add VAT to the discounted amount. VAT is charged on the price the customer actually pays, so a 10% discount on a £100 net price leaves £90 net and £108 gross at 20%.</div>
+            </details>
+            <details class="group">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                Should I round VAT per line or on the invoice total?
+                <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </summary>
+              <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">Pick one method per invoice and apply it consistently. Retailers must not round the VAT figure down, but may round each calculation up or down to the nearest penny. Businesses issuing VAT invoices to other businesses may use the Notice 700 paragraph 17.5 concession and round the total VAT down to a whole penny.</div>
+            </details>
+            <details class="group">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                Which rate do I add?
+                <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </summary>
+              <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">Use the rate that applies to the supply at the tax point. Most goods and services are standard rated at 20%, some are reduced at 5%, and zero-rated supplies use a multiplier of 1.00.</div>
+            </details>
+          </div>
+        </section>
+
+        <section id="page-sources" aria-labelledby="page-sources-heading" class="mt-12 max-w-3xl border-t border-slate-200 pt-8">
+          <h2 id="page-sources-heading" class="text-lg font-bold tracking-tight text-slate-900">Sources</h2>
+          <p class="mt-2 text-sm leading-relaxed text-slate-600">
+            Rates, thresholds and rules on this page are checked against these primary sources. They open on GOV.UK, HMRC or legislation.gov.uk.
+          </p>
+          <ul class="mt-4 space-y-2.5 text-sm leading-relaxed">
+            <li>
+              <a href="https://www.gov.uk/guidance/vat-guide-notice-700" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">HMRC: VAT guide (VAT Notice 700)</a>
+              <span class="text-slate-500">(HMRC notice)</span>
+            </li>
+            <li>
+              <a href="https://www.legislation.gov.uk/ukpga/1994/23/section/2" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">legislation.gov.uk: Value Added Tax Act 1994, section 2 (rate of VAT)</a>
+              <span class="text-slate-500">(Legislation)</span>
+            </li>
+            <li>
+              <a href="https://www.gov.uk/vat-rates" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">GOV.UK: VAT rates</a>
+              <span class="text-slate-500">(Guidance)</span>
+            </li>
+          </ul>
+          <p class="mt-4 text-xs text-slate-500">Sources checked 19 November 2026. Not tax or legal advice.</p>
+        </section>
+
+<div class="mt-12 border-t border-slate-200 pt-8">
+          <h2 class="text-lg font-bold tracking-tight text-slate-900">Related reading</h2>
+          <div class="mt-4 grid gap-3 sm:grid-cols-3">
+            <a href="how-to-remove-vat.html" class="group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              <span class="text-sm font-bold text-slate-900 group-hover:text-blue-700">How to remove VAT</span>
+              <span class="mt-2 text-xs leading-relaxed text-slate-600">The reverse calculation, and why subtracting 20% is wrong.</span>
+            </a>
+            <a href="vat-rates.html" class="group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              <span class="text-sm font-bold text-slate-900 group-hover:text-blue-700">VAT rates explained</span>
+              <span class="mt-2 text-xs leading-relaxed text-slate-600">Standard, reduced, zero and exempt supplies.</span>
+            </a>
+            <a href="vat-invoices-mtd.html" class="group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              <span class="text-sm font-bold text-slate-900 group-hover:text-blue-700">VAT invoices and MTD</span>
+              <span class="mt-2 text-xs leading-relaxed text-slate-600">What a valid invoice needs to show.</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
+          <div>
+            <p class="text-sm font-bold tracking-tight text-slate-900">VAT in UK</p>
+            <p class="mt-3 max-w-xs text-xs leading-relaxed text-slate-500">
+              Free UK VAT calculators and plain-English guides. Every calculation runs in your
+              browser, with no accounts and no tracking.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Site</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="../index.html#main" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT calculator</a></li>
+              <li><a href="../index.html#tools" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT tools</a></li>
+              <li><a href="../guides.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT guides</a></li>
+              <li><a href="../faqs.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT FAQs</a></li>
+              <li><a href="../glossary.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT glossary</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Calculators</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="../calculators/vat-fraction.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT fraction</a></li>
+              <li><a href="../calculators/margin-scheme.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Margin scheme</a></li>
+              <li><a href="../calculators/reverse-charge.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Reverse charge</a></li>
+              <li><a href="../calculators/vat-on-expenses.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT on expenses</a></li>
+              <li><a href="../calculators/registration-threshold.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Registration threshold</a></li>
+              <li><a href="../calculators/bulk-vat.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Bulk VAT</a></li>
+              <li><a href="../calculators/flat-rate-scheme.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Flat Rate Scheme</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Company and legal</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="../about.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">About us</a></li>
+              <li><a href="../contact.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Contact us</a></li>
+              <li><a href="../editorial-policy.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Editorial policy</a></li>
+              <li><a href="../methodology.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Methodology</a></li>
+              <li><a href="../corrections.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Corrections log</a></li>
+              <li><a href="../privacy-policy.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Privacy policy</a></li>
+              <li><a href="../terms-and-conditions.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Terms and conditions</a></li>
+              <li><a href="../cookies-policy.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Cookies policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-col gap-3 border-t border-slate-200 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; 2026 VAT in UK. All rights reserved.</p>
+          <p>Estimates only &middot; Not tax or legal advice</p>
+          <a href="#top" class="inline-flex items-center gap-1 rounded-md font-semibold text-blue-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+            Back to top
+            <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

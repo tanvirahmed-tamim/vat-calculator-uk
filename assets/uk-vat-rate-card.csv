@@ -1,0 +1,13 @@
+Field,Value,Unit,Note,Source
+Standard rate,20,percent,Current rate since 4 January 2011,https://www.gov.uk/vat-rates
+Reduced rate,5,percent,Defined list of goods and services,https://www.gov.uk/vat-rates
+Zero rate,0,percent,Zero-rated taxable supplies,https://www.gov.uk/vat-rates
+Domestic electricity in Great Britain,0,percent,Temporary zero rate from 1 October 2026 to 30 June 2027,https://www.gov.uk/guidance/vat-on-fuel-and-power-notice-70119
+Standard rate multiplier,1.20,factor,Net x 1.20 = gross,
+Reduced rate multiplier,1.05,factor,Net x 1.05 = gross,
+Zero rate multiplier,1.00,factor,Net x 1.00 = gross,
+Standard VAT fraction,1/6,fraction,VAT share of a gross amount at 20 percent,
+Reduced VAT fraction,1/21,fraction,VAT share of a gross amount at 5 percent,
+Registration threshold,90000,GBP,"Rolling 12 months of taxable turnover",https://www.gov.uk/vat-registration-thresholds
+Deregistration threshold,88000,GBP,"Expected taxable turnover in the next 12 months",https://www.gov.uk/vat-registration-thresholds
+Flat Rate Scheme limited cost trader rate,16.5,percent,"VAT-inclusive turnover",https://www.gov.uk/vat-flat-rate-scheme

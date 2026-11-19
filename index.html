@@ -1,0 +1,1810 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VAT Calculator UK – Add or Remove VAT at 20%, 5% or 0%</title>
+    <meta name="description" content="Free UK VAT calculator. Add or remove VAT at 20%, 5%, 0% or a custom rate, plus bulk, flat-rate, margin-scheme and threshold calculators." />
+    <link rel="canonical" href="https://vatinuk.co.uk/" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="VAT in UK team" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VAT in UK" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:title" content="VAT Calculator UK – Add or Remove VAT at 20%, 5% or 0%" />
+    <meta property="og:description" content="Free UK VAT calculator. Add or remove VAT at 20%, 5%, 0% or a custom rate, plus bulk, flat-rate, margin-scheme and threshold calculators." />
+    <meta property="og:url" content="https://vatinuk.co.uk/" />
+    <meta property="og:image" content="https://vatinuk.co.uk/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="VAT in UK - free UK VAT calculators and guides" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VAT Calculator UK – Add or Remove VAT at 20%, 5% or 0%" />
+    <meta name="twitter:description" content="Free UK VAT calculator. Add or remove VAT at 20%, 5%, 0% or a custom rate, plus bulk, flat-rate, margin-scheme and threshold calculators." />
+    <meta name="twitter:image" content="https://vatinuk.co.uk/assets/og-image.png" />
+
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563eb'/%3E%3Ctext x='50' y='72' font-size='58' font-family='Arial, sans-serif' font-weight='bold' text-anchor='middle' fill='white'%3E%C2%A3%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    
+  </head>
+
+  <body
+    id="top"
+    class="relative min-h-screen bg-slate-50 font-sans text-slate-900 antialiased"
+  >
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-blue-700 focus:shadow-lg focus:outline-2 focus:outline-blue-500"
+    >
+      Skip to calculator
+    </a>
+
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[28rem] bg-[radial-gradient(60%_100%_at_50%_0%,#dbeafe_0%,rgba(248,250,252,0)_72%)]"
+    ></div>
+
+    <!-- Header -->
+                            <header class="border-b border-slate-200/70">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4 py-4">
+          <a href="index.html" class="flex items-center gap-2.5" aria-label="VAT in UK home">
+            <span class="grid size-9 place-items-center rounded-xl bg-blue-600 text-white shadow-sm shadow-blue-600/30">
+              <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="3" width="14" height="18" rx="2" />
+                <path d="M8 7h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h4" />
+              </svg>
+            </span>
+            <span class="leading-tight">
+              <span class="block text-sm font-semibold tracking-tight">VAT in UK</span>
+              <span class="block text-[11px] font-medium uppercase tracking-[0.14em] text-slate-500">Calculators and guides</span>
+            </span>
+          </a>
+
+          <nav class="hidden items-center gap-1 md:flex" aria-label="Primary">
+            <a href="index.html#main" aria-current="page" class="rounded-lg px-3 py-2 text-sm font-semibold text-blue-700">Calculator</a>
+            <a href="index.html#tools" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Tools</a>
+            <a href="guides.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Guides</a>
+            <a href="faqs.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">FAQs</a>
+            <a href="about.html" class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">About</a>
+          </nav>
+
+          <div class="hidden items-center gap-2 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-medium text-slate-600 shadow-sm lg:flex">
+            <span class="size-1.5 rounded-full bg-emerald-500" aria-hidden="true"></span>
+            Standard 20% &middot; Reduced 5% &middot; Zero 0%
+          </div>
+        </div>
+
+        <nav class="-mx-1 flex items-center gap-1 overflow-x-auto px-1 pb-3 md:hidden" aria-label="Primary mobile">
+          <a href="index.html#main" aria-current="page" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-blue-700">Calculator</a>
+          <a href="index.html#tools" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Tools</a>
+          <a href="guides.html" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Guides</a>
+          <a href="faqs.html" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">FAQs</a>
+          <a href="about.html" class="shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <noscript>
+      <div class="border-b border-slate-200 bg-slate-50 px-4 py-3 text-center text-sm text-slate-600">
+        The live calculator needs JavaScript to update results. The VAT rates and worked examples
+        below still apply.
+      </div>
+    </noscript>
+
+    <main id="main">
+      <!-- Calculator -->
+      <section class="mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-6 sm:pt-14 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p
+            class="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700"
+          >
+            <span class="size-1.5 rounded-full bg-blue-500" aria-hidden="true"></span>
+            Free UK VAT tool
+          </p>
+          <h1 class="mt-5 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+            VAT calculator <span class="text-blue-600">for the UK</span>
+          </h1>
+          <p class="mx-auto mt-4 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg">
+            Add VAT to a net price or remove it from a gross price at 20%, 5%, 0% or your own
+            rate. Results update as you type.
+          </p>
+          <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-slate-500">
+            VAT (value added tax) is a UK consumption tax charged on most goods and services. The
+            standard rate is 20%, with a 5% reduced rate for a defined list and a 0% zero rate for
+            items such as most food and children&rsquo;s clothing. VAT-registered businesses charge
+            it on sales and reclaim it on business purchases.
+          </p>
+          <ul
+            class="mx-auto mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-slate-500"
+          >
+            <li class="inline-flex items-center gap-1.5">
+              <svg
+                class="size-3.5 text-emerald-500"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m5 13 4 4L19 7" />
+              </svg>
+              No sign-up
+            </li>
+            <li class="inline-flex items-center gap-1.5">
+              <svg
+                class="size-3.5 text-emerald-500"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m5 13 4 4L19 7" />
+              </svg>
+              Works offline
+            </li>
+            <li class="inline-flex items-center gap-1.5">
+              <svg
+                class="size-3.5 text-emerald-500"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m5 13 4 4L19 7" />
+              </svg>
+              Rounded to the penny
+            </li>
+          </ul>
+        </div>
+
+        <div class="mx-auto mt-10 max-w-5xl">
+          <form
+            id="vat-form"
+            novalidate
+            class="rounded-3xl border border-slate-200 bg-white p-5 shadow-xl shadow-slate-900/5 sm:p-7 lg:p-8"
+          >
+            <div class="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+              <!-- Inputs -->
+              <div>
+                <fieldset>
+                  <legend class="sr-only">Calculation mode</legend>
+                  <div class="grid grid-cols-2 gap-1 rounded-xl bg-slate-100 p-1">
+                    <label class="cursor-pointer">
+                      <input type="radio" name="mode" value="add" class="peer sr-only" checked />
+                      <span
+                        class="flex items-center justify-center rounded-lg px-4 py-2.5 text-sm font-semibold text-slate-500 transition peer-checked:bg-white peer-checked:text-slate-900 peer-checked:shadow-sm peer-focus-visible:ring-2 peer-focus-visible:ring-blue-500 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-slate-100"
+                      >
+                        Add VAT
+                      </span>
+                    </label>
+                    <label class="cursor-pointer">
+                      <input type="radio" name="mode" value="remove" class="peer sr-only" />
+                      <span
+                        class="flex items-center justify-center rounded-lg px-4 py-2.5 text-sm font-semibold text-slate-500 transition peer-checked:bg-white peer-checked:text-slate-900 peer-checked:shadow-sm peer-focus-visible:ring-2 peer-focus-visible:ring-blue-500 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-slate-100"
+                      >
+                        Remove VAT
+                      </span>
+                    </label>
+                  </div>
+                  <p id="mode-help" class="mt-2 text-xs text-slate-500">
+                    Net price &rarr; gross price. We add VAT to the amount you enter.
+                  </p>
+                </fieldset>
+
+                <div class="mt-6">
+                  <div class="flex items-baseline justify-between gap-3">
+                    <label for="amount" id="amount-label" class="text-sm font-semibold text-slate-700">
+                      Amount (net)
+                    </label>
+                    <button
+                      type="button"
+                      id="reset"
+                      class="rounded-md px-1.5 py-0.5 text-xs font-semibold text-slate-500 transition hover:text-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+                    >
+                      Reset
+                    </button>
+                  </div>
+
+                  <div class="relative mt-2">
+                    <span
+                      class="pointer-events-none absolute inset-y-0 left-0 grid w-12 place-items-center text-lg font-semibold text-slate-400"
+                      aria-hidden="true"
+                    >
+                      &pound;
+                    </span>
+                    <input
+                      id="amount"
+                      name="amount"
+                      type="text"
+                      inputmode="decimal"
+                      autocomplete="off"
+                      spellcheck="false"
+                      value="100.00"
+                      aria-describedby="amount-help amount-error"
+                      class="block w-full rounded-xl border border-slate-300 bg-white py-3.5 pl-12 pr-16 text-2xl font-semibold tabular-nums text-slate-900 shadow-sm outline-none transition placeholder:text-slate-300 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/15"
+                    />
+                    <span
+                      id="amount-tag"
+                      class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-[11px] font-bold uppercase tracking-wider text-slate-500"
+                      aria-hidden="true"
+                    >
+                      NET
+                    </span>
+                  </div>
+                  <p id="amount-help" class="mt-2 text-xs text-slate-500">
+                    Enter pounds, e.g. 120 or 1,200.50
+                  </p>
+                  <p id="amount-error" role="alert" class="mt-2 hidden text-xs font-medium text-red-600"></p>
+
+                  <div class="mt-3 flex flex-wrap items-center gap-2">
+                    <span class="mr-1 text-xs text-slate-400">Quick:</span>
+                    <button
+                      type="button"
+                      data-quick="100"
+                      class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+                    >
+                      &pound;100
+                    </button>
+                    <button
+                      type="button"
+                      data-quick="500"
+                      class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+                    >
+                      &pound;500
+                    </button>
+                    <button
+                      type="button"
+                      data-quick="1000"
+                      class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+                    >
+                      &pound;1,000
+                    </button>
+                  </div>
+
+                  <details class="group/keypad mt-4 rounded-xl border border-slate-200 bg-slate-50">
+                    <summary
+                      class="flex cursor-pointer list-none items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-xs font-semibold text-slate-600 transition hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500"
+                    >
+                      <span class="inline-flex items-center gap-1.5">
+                        <svg
+                          class="size-4 text-slate-400"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <rect x="3" y="4" width="18" height="16" rx="2" />
+                          <path d="M7 8h.01M12 8h.01M17 8h.01M7 12h.01M12 12h.01M17 12h.01M7 16h10" />
+                        </svg>
+                        On-screen keypad
+                      </span>
+                      <svg
+                        class="size-3.5 shrink-0 text-slate-400 transition group-open/keypad:rotate-180"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m6 9 6 6 6-6" />
+                      </svg>
+                    </summary>
+                    <div
+                      id="keypad"
+                      class="grid grid-cols-4 gap-1.5 border-t border-slate-200 p-2"
+                      role="group"
+                      aria-label="Numeric keypad"
+                    >
+                      <button type="button" class="keypad-key" data-keypad="7">7</button>
+                      <button type="button" class="keypad-key" data-keypad="8">8</button>
+                      <button type="button" class="keypad-key" data-keypad="9">9</button>
+                      <button
+                        type="button"
+                        class="keypad-key text-slate-500"
+                        data-keypad="backspace"
+                        aria-label="Backspace"
+                      >
+                        &larr;
+                      </button>
+                      <button type="button" class="keypad-key" data-keypad="4">4</button>
+                      <button type="button" class="keypad-key" data-keypad="5">5</button>
+                      <button type="button" class="keypad-key" data-keypad="6">6</button>
+                      <button
+                        type="button"
+                        class="keypad-key text-slate-500"
+                        data-keypad="clear"
+                        aria-label="Clear amount"
+                      >
+                        C
+                      </button>
+                      <button type="button" class="keypad-key" data-keypad="1">1</button>
+                      <button type="button" class="keypad-key" data-keypad="2">2</button>
+                      <button type="button" class="keypad-key" data-keypad="3">3</button>
+                      <button
+                        type="button"
+                        class="keypad-key"
+                        data-keypad="."
+                        aria-label="Decimal point"
+                      >
+                        .
+                      </button>
+                      <button type="button" class="keypad-key col-span-4" data-keypad="0">0</button>
+                    </div>
+                  </details>
+                </div>
+
+                <fieldset class="mt-6">
+                  <legend class="text-sm font-semibold text-slate-700">VAT rate</legend>
+                  <div class="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
+                    <label class="cursor-pointer">
+                      <input type="radio" name="rate" value="20" class="peer sr-only" checked />
+                      <span
+                        class="flex h-full flex-col items-center justify-center rounded-xl border border-slate-200 bg-white px-2 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 peer-checked:border-blue-600 peer-checked:bg-blue-50 peer-checked:text-blue-700 peer-focus-visible:ring-2 peer-focus-visible:ring-blue-500 peer-focus-visible:ring-offset-2"
+                      >
+                        20%
+                        <span class="mt-0.5 text-[10px] font-medium uppercase tracking-wide opacity-70">
+                          Standard
+                        </span>
+                      </span>
+                    </label>
+                    <label class="cursor-pointer">
+                      <input type="radio" name="rate" value="5" class="peer sr-only" />
+                      <span
+                        class="flex h-full flex-col items-center justify-center rounded-xl border border-slate-200 bg-white px-2 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 peer-checked:border-blue-600 peer-checked:bg-blue-50 peer-checked:text-blue-700 peer-focus-visible:ring-2 peer-focus-visible:ring-blue-500 peer-focus-visible:ring-offset-2"
+                      >
+                        5%
+                        <span class="mt-0.5 text-[10px] font-medium uppercase tracking-wide opacity-70">
+                          Reduced
+                        </span>
+                      </span>
+                    </label>
+                    <label class="cursor-pointer">
+                      <input type="radio" name="rate" value="0" class="peer sr-only" />
+                      <span
+                        class="flex h-full flex-col items-center justify-center rounded-xl border border-slate-200 bg-white px-2 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 peer-checked:border-blue-600 peer-checked:bg-blue-50 peer-checked:text-blue-700 peer-focus-visible:ring-2 peer-focus-visible:ring-blue-500 peer-focus-visible:ring-offset-2"
+                      >
+                        0%
+                        <span class="mt-0.5 text-[10px] font-medium uppercase tracking-wide opacity-70">
+                          Zero
+                        </span>
+                      </span>
+                    </label>
+                    <label class="cursor-pointer">
+                      <input type="radio" name="rate" value="custom" class="peer sr-only" />
+                      <span
+                        class="flex h-full flex-col items-center justify-center rounded-xl border border-slate-200 bg-white px-2 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 peer-checked:border-blue-600 peer-checked:bg-blue-50 peer-checked:text-blue-700 peer-focus-visible:ring-2 peer-focus-visible:ring-blue-500 peer-focus-visible:ring-offset-2"
+                      >
+                        Custom
+                        <span class="mt-0.5 text-[10px] font-medium uppercase tracking-wide opacity-70">
+                          Your rate
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div id="custom-wrap" class="mt-3 hidden">
+                    <label for="custom-rate" class="text-xs font-medium text-slate-600">
+                      Custom rate (%)
+                    </label>
+                    <div class="relative mt-1.5 max-w-40">
+                      <input
+                        id="custom-rate"
+                        type="text"
+                        inputmode="decimal"
+                        autocomplete="off"
+                        placeholder="e.g. 17.5"
+                        aria-describedby="rate-error"
+                        class="block w-full rounded-lg border border-slate-300 bg-white px-3 py-2 pr-8 text-sm font-semibold tabular-nums text-slate-900 shadow-sm outline-none transition placeholder:font-normal placeholder:text-slate-400 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/15"
+                      />
+                      <span
+                        class="pointer-events-none absolute inset-y-0 right-0 grid w-8 place-items-center text-sm text-slate-400"
+                        aria-hidden="true"
+                      >
+                        %
+                      </span>
+                    </div>
+                    <p id="rate-error" role="alert" class="mt-1.5 hidden text-xs font-medium text-red-600"></p>
+                  </div>
+                </fieldset>
+
+              </div>
+
+              <div class="flex flex-col gap-4 lg:sticky lg:top-6 lg:self-start">
+                <!-- Results -->
+                <div
+                  id="results-panel"
+                  class="flex flex-col justify-between rounded-2xl bg-linear-to-br from-blue-600 via-blue-700 to-indigo-800 p-6 text-white shadow-lg shadow-blue-600/20 sm:p-7"
+                >
+                <div>
+                  <p
+                    id="total-label"
+                    class="text-xs font-semibold uppercase tracking-[0.16em] text-blue-100"
+                  >
+                    Gross &middot; incl. VAT
+                  </p>
+                  <p
+                    id="total"
+                    class="mt-2 text-4xl font-extrabold tracking-tight tabular-nums sm:text-5xl"
+                  >
+                    &pound;120.00
+                  </p>
+                  <p id="rate-note" class="mt-1.5 text-sm text-blue-100/90">
+                    at 20% standard rate
+                  </p>
+
+                  <div class="mt-5">
+                    <div class="flex h-2 overflow-hidden rounded-full bg-white/20" aria-hidden="true">
+                      <div
+                        id="bar-net"
+                        class="h-full bg-white transition-[width] duration-300"
+                        style="width: 83.3333%"
+                      ></div>
+                      <div
+                        id="bar-vat"
+                        class="h-full bg-blue-300 transition-[width] duration-300"
+                        style="width: 16.6667%"
+                      ></div>
+                    </div>
+                    <div
+                      class="mt-2 flex items-center justify-between text-[11px] font-medium text-blue-100/80"
+                    >
+                      <span class="inline-flex items-center gap-1.5">
+                        <span class="size-1.5 rounded-full bg-white" aria-hidden="true"></span>
+                        Net <span id="share-net">83.3%</span>
+                      </span>
+                      <span class="inline-flex items-center gap-1.5">
+                        <span class="size-1.5 rounded-full bg-blue-300" aria-hidden="true"></span>
+                        VAT <span id="share-vat">16.7%</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <dl class="mt-7 space-y-3 border-t border-white/15 pt-5 text-sm">
+                  <div class="flex items-center justify-between gap-4">
+                    <dt class="text-blue-100">Net (excl. VAT)</dt>
+                    <dd id="net" class="font-semibold tabular-nums">&pound;100.00</dd>
+                  </div>
+                  <div class="flex items-center justify-between gap-4">
+                    <dt id="vat-label" class="text-blue-100">VAT (20%)</dt>
+                    <dd id="vat" class="font-semibold tabular-nums">&pound;20.00</dd>
+                  </div>
+                  <div class="flex items-center justify-between gap-4">
+                    <dt class="text-blue-100">Gross (incl. VAT)</dt>
+                    <dd id="gross" class="font-semibold tabular-nums">&pound;120.00</dd>
+                  </div>
+                </dl>
+
+                <div class="mt-6 grid grid-cols-2 gap-2">
+                  <button
+                    id="copy"
+                    type="button"
+                    aria-label="Copy VAT breakdown"
+                    class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-3 py-3 text-sm font-semibold text-white transition hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-white/10"
+                  >
+                    <svg
+                      id="copy-icon"
+                      class="size-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="9" y="9" width="11" height="11" rx="2" />
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                    </svg>
+                    <svg
+                      id="copy-check"
+                      class="hidden size-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="m5 13 4 4L19 7" />
+                    </svg>
+                    <span id="copy-text">Copy</span>
+                  </button>
+                  <button
+                    id="share"
+                    type="button"
+                    aria-label="Copy a shareable link to this calculation"
+                    class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-white/25 bg-white/10 px-3 py-3 text-sm font-semibold text-white transition hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-white/10"
+                  >
+                    <svg
+                      class="size-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1.2 1.2" />
+                      <path d="M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1.2-1.2" />
+                    </svg>
+                    <span id="share-text">Share</span>
+                  </button>
+                </div>
+              </div>
+
+                <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
+                  <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-slate-500">
+                    The maths
+                  </p>
+                  <p id="formula" class="mt-1 font-mono text-xs leading-relaxed text-slate-600">
+                    &pound;100.00 &times; 1.2 = &pound;120.00
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="mt-6 flex items-start gap-2 text-xs leading-relaxed text-slate-500">
+              <svg
+                class="mt-0.5 size-4 shrink-0 text-slate-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 11v5M12 8h.01" />
+              </svg>
+              VAT is rounded to the nearest penny. Figures are estimates and not tax advice.
+            </p>
+
+            <p id="result-status" class="sr-only" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="mx-auto mt-6 max-w-5xl rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
+            <div class="flex items-start gap-3">
+              <svg class="mt-0.5 size-5 shrink-0 text-emerald-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              <p class="text-sm leading-relaxed text-emerald-900">
+                <strong class="font-semibold">Private by design.</strong> Every UK VAT calculation
+                runs in your browser with JavaScript. The calculator sets no cookies, loads no
+                analytics or advertising scripts, and sends no amounts to a server. This
+                statement was last verified on 13 November 2026.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How VAT is calculated -->
+      <section id="how-vat-is-calculated" class="border-t border-slate-200 bg-slate-50 py-16">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">The formulas</p>
+            <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              How UK VAT is calculated at 20%, 5% and 0%
+            </h2>
+            <p class="mt-4 leading-relaxed text-slate-600">
+              The UK VAT formula multiplies a net price by 1 plus the rate expressed as a decimal.
+              At the 20% standard rate, net &times; 1.20 = gross, so &pound;250 becomes &pound;300 and
+              the VAT element is &pound;50. At the 5% reduced rate, net &times; 1.05 = gross, so
+              &pound;50 becomes &pound;52.50. The 0% zero rate multiplies by 1.00, which leaves the
+              price unchanged because zero-rated supplies are still taxable supplies.
+            </p>
+            <p class="mt-4 leading-relaxed text-slate-600">
+              Removing VAT uses division, not subtraction. Gross &divide; 1.20 = net at the standard
+              rate, so &pound;120 becomes &pound;100 with &pound;20 of VAT. Gross &divide; 1.05 = net
+              at the reduced rate, so &pound;105 becomes &pound;100 with &pound;5 of VAT.
+              Subtracting 20% from a gross amount gives the wrong answer because VAT is charged on
+              the net, not on the gross. The VAT fraction is the shortcut: 1/6 at 20% and 1/21 at 5%.
+            </p>
+          </div>
+
+          <div class="mt-8 overflow-x-auto">
+            <table class="w-full min-w-[46rem] border-collapse text-left text-sm">
+              <caption class="sr-only">UK VAT rates with the formula to add and remove VAT</caption>
+              <thead>
+                <tr class="border-b border-slate-300 text-xs uppercase tracking-wide text-slate-500">
+                  <th scope="col" class="py-3 pr-4 font-semibold">Rate</th>
+                  <th scope="col" class="py-3 pr-4 font-semibold">Add VAT (net &rarr; gross)</th>
+                  <th scope="col" class="py-3 pr-4 font-semibold">Remove VAT (gross &rarr; net)</th>
+                  <th scope="col" class="py-3 pr-4 font-semibold">VAT fraction</th>
+                  <th scope="col" class="py-3 font-semibold">Typical supplies</th>
+                </tr>
+              </thead>
+              <tbody class="text-slate-700">
+                <tr class="border-b border-slate-200">
+                  <th scope="row" class="py-3 pr-4 font-semibold text-slate-900">20% standard</th>
+                  <td class="py-3 pr-4 font-mono text-[13px]">net &times; 1.20</td>
+                  <td class="py-3 pr-4 font-mono text-[13px]">gross &divide; 1.20</td>
+                  <td class="py-3 pr-4 font-mono text-[13px]">1/6</td>
+                  <td class="py-3">Most goods and services</td>
+                </tr>
+                <tr class="border-b border-slate-200">
+                  <th scope="row" class="py-3 pr-4 font-semibold text-slate-900">5% reduced</th>
+                  <td class="py-3 pr-4 font-mono text-[13px]">net &times; 1.05</td>
+                  <td class="py-3 pr-4 font-mono text-[13px]">gross &divide; 1.05</td>
+                  <td class="py-3 pr-4 font-mono text-[13px]">1/21</td>
+                  <td class="py-3">Domestic energy, children&rsquo;s car seats, some renovations</td>
+                </tr>
+                <tr class="border-b border-slate-200">
+                  <th scope="row" class="py-3 pr-4 font-semibold text-slate-900">0% zero</th>
+                  <td class="py-3 pr-4 font-mono text-[13px]">net &times; 1.00</td>
+                  <td class="py-3 pr-4 font-mono text-[13px]">gross &divide; 1.00</td>
+                  <td class="py-3 pr-4 font-mono text-[13px]">0</td>
+                  <td class="py-3">Most food, books, children&rsquo;s clothing</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="py-3 pr-4 font-semibold text-slate-900">Exempt</th>
+                  <td class="py-3 pr-4 font-mono text-[13px]">no VAT added</td>
+                  <td class="py-3 pr-4 font-mono text-[13px]">no VAT included</td>
+                  <td class="py-3 pr-4 font-mono text-[13px]">&mdash;</td>
+                  <td class="py-3">Finance, insurance, education, residential rent</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-8 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <div class="min-w-0">
+              <h3 class="text-base font-bold tracking-tight text-slate-900">
+                VAT fraction check: 1/6 against 1/21
+              </h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                The VAT fraction extracts the tax from a gross amount without a division step. At
+                20%, every &pound;120 of gross contains &pound;20 of VAT, because 1/6 of &pound;120 is
+                &pound;20. At 5%, every &pound;105 of gross contains &pound;5 of VAT, because 1/21 of
+                &pound;105 is &pound;5.
+              </p>
+              <div class="mt-4 overflow-x-auto">
+                <table class="w-full min-w-[24rem] border-collapse text-left text-sm">
+                  <caption class="sr-only">Worked VAT fraction examples at 20% and 5%</caption>
+                  <thead>
+                    <tr class="border-b border-slate-300 text-xs uppercase tracking-wide text-slate-500">
+                      <th scope="col" class="py-2 pr-4 font-semibold">Gross</th>
+                      <th scope="col" class="py-2 pr-4 font-semibold">Rate</th>
+                      <th scope="col" class="py-2 pr-4 font-semibold">Fraction</th>
+                      <th scope="col" class="py-2 pr-4 font-semibold">VAT</th>
+                      <th scope="col" class="py-2 font-semibold">Net</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-slate-700">
+                    <tr class="border-b border-slate-200"><td class="py-2 pr-4 font-mono text-[13px]">&pound;120.00</td><td class="py-2 pr-4">20%</td><td class="py-2 pr-4 font-mono text-[13px]">1/6</td><td class="py-2 pr-4 font-mono text-[13px]">&pound;20.00</td><td class="py-2 font-mono text-[13px]">&pound;100.00</td></tr>
+                    <tr class="border-b border-slate-200"><td class="py-2 pr-4 font-mono text-[13px]">&pound;105.00</td><td class="py-2 pr-4">5%</td><td class="py-2 pr-4 font-mono text-[13px]">1/21</td><td class="py-2 pr-4 font-mono text-[13px]">&pound;5.00</td><td class="py-2 font-mono text-[13px]">&pound;100.00</td></tr>
+                    <tr class="border-b border-slate-200"><td class="py-2 pr-4 font-mono text-[13px]">&pound;240.00</td><td class="py-2 pr-4">20%</td><td class="py-2 pr-4 font-mono text-[13px]">1/6</td><td class="py-2 pr-4 font-mono text-[13px]">&pound;40.00</td><td class="py-2 font-mono text-[13px]">&pound;200.00</td></tr>
+                    <tr><td class="py-2 pr-4 font-mono text-[13px]">&pound;52.50</td><td class="py-2 pr-4">5%</td><td class="py-2 pr-4 font-mono text-[13px]">1/21</td><td class="py-2 pr-4 font-mono text-[13px]">&pound;2.50</td><td class="py-2 font-mono text-[13px]">&pound;50.00</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="min-w-0 rounded-2xl border border-slate-200 bg-white p-5">
+              <h3 class="text-base font-bold tracking-tight text-slate-900">Zero-rated is not exempt</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                HMRC treats zero-rated supplies as taxable at 0%, so a zero-rated sale belongs in
+                box 6 of the VAT return and the business can usually reclaim input tax on related
+                costs. Exempt supplies are within the scope of VAT but no VAT is charged on them, so input tax linked to exempt activity is generally blocked.
+              </p>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
+                The statutory framework is the
+                <em>Value Added Tax Act 1994</em>, with the detailed rules in HMRC VAT Notice 700.
+              </p>
+              <p class="mt-3 text-xs font-semibold">
+                <a href="guides/zero-rated-exempt-outside-scope.html" class="text-blue-700 underline decoration-blue-200 underline-offset-2 hover:decoration-blue-500">Read zero-rated vs exempt</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Worked examples -->
+      <section class="border-t border-slate-200 bg-white py-16">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-2xl">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">
+              Worked examples
+            </p>
+            <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Adding and removing VAT
+            </h2>
+            <p class="mt-3 leading-relaxed text-slate-600">
+              Three quick examples using the standard and reduced rates.
+            </p>
+          </div>
+
+          <div class="mt-8 grid gap-4 md:grid-cols-3">
+            <article class="rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
+              <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                20% standard rate
+              </p>
+              <h3 class="mt-1 text-base font-semibold text-slate-900">Add 20% to &pound;250</h3>
+              <p class="mt-4 rounded-lg border border-slate-200 bg-white px-3 py-2.5 font-mono text-[13px] text-slate-700">
+                &pound;250 &times; 1.20
+              </p>
+              <p class="mt-4 text-2xl font-bold tracking-tight text-slate-900">
+                &pound;300.00
+                <span class="text-sm font-medium text-slate-500">incl. VAT</span>
+              </p>
+            </article>
+
+            <article class="rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
+              <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                20% standard rate
+              </p>
+              <h3 class="mt-1 text-base font-semibold text-slate-900">
+                Remove 20% from &pound;120
+              </h3>
+              <p class="mt-4 rounded-lg border border-slate-200 bg-white px-3 py-2.5 font-mono text-[13px] text-slate-700">
+                &pound;120 &divide; 1.20
+              </p>
+              <p class="mt-4 text-2xl font-bold tracking-tight text-slate-900">
+                &pound;100.00
+                <span class="text-sm font-medium text-slate-500">excl. VAT</span>
+              </p>
+            </article>
+
+            <article class="rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
+              <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                5% reduced rate
+              </p>
+              <h3 class="mt-1 text-base font-semibold text-slate-900">Add 5% to &pound;50</h3>
+              <p class="mt-4 rounded-lg border border-slate-200 bg-white px-3 py-2.5 font-mono text-[13px] text-slate-700">
+                &pound;50 &times; 1.05
+              </p>
+              <p class="mt-4 text-2xl font-bold tracking-tight text-slate-900">
+                &pound;52.50
+                <span class="text-sm font-medium text-slate-500">incl. VAT</span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- More VAT tools -->
+      <section id="tools" class="border-t border-slate-200 bg-white py-16">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-2xl">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">
+              More VAT tools
+            </p>
+            <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Threshold, bulk and flat-rate helpers
+            </h2>
+            <p class="mt-3 leading-relaxed text-slate-600">
+              Four helpers for the questions that come after the basic sum: when to register, how
+              to process a list of invoices, what you pay under the Flat Rate Scheme, and how the
+              standard rate has changed since 1973. Each has its own page, with the method and the
+              rules beside the result.
+            </p>
+          </div>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <a
+              href="calculators/registration-threshold.html"
+              class="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+            >
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Registration</p>
+              <p class="mt-2 text-2xl font-extrabold tracking-tight text-slate-900">&pound;90,000</p>
+              <p class="mt-1 text-xs font-medium text-slate-500">rolling 12 months</p>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Check your taxable turnover against the registration threshold and see how much headroom is left before the 30-day forward look applies.</p>
+              <span class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition group-hover:text-blue-700">
+                Open tool <span aria-hidden="true">&rarr;</span>
+              </span>
+            </a>
+
+            <a
+              href="calculators/bulk-vat.html"
+              class="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+            >
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Bulk</p>
+              <p class="mt-2 text-2xl font-extrabold tracking-tight text-slate-900">500 lines</p>
+              <p class="mt-1 text-xs font-medium text-slate-500">add or remove VAT</p>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Paste a column of amounts from a spreadsheet and get net, VAT and gross for every line, with totals and a CSV copy.</p>
+              <span class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition group-hover:text-blue-700">
+                Open tool <span aria-hidden="true">&rarr;</span>
+              </span>
+            </a>
+
+            <a
+              href="calculators/flat-rate-scheme.html"
+              class="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+            >
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Flat Rate Scheme</p>
+              <p class="mt-2 text-2xl font-extrabold tracking-tight text-slate-900">4% &ndash; 14.5%</p>
+              <p class="mt-1 text-xs font-medium text-slate-500">16.5% limited cost trader</p>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Estimate what you would pay from VAT-inclusive turnover, your sector percentage and the first-year reduction.</p>
+              <span class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition group-hover:text-blue-700">
+                Open tool <span aria-hidden="true">&rarr;</span>
+              </span>
+            </a>
+
+            <a
+              href="guides/vat-rate-history.html"
+              class="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+            >
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Rate history</p>
+              <p class="mt-2 text-2xl font-extrabold tracking-tight text-slate-900">10% &rarr; 20%</p>
+              <p class="mt-1 text-xs font-medium text-slate-500">every change since 1973</p>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">The standard, reduced and zero rates from 1 April 1973 to today, with the date each change applied.</p>
+              <span class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition group-hover:text-blue-700">
+                Open tool <span aria-hidden="true">&rarr;</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+                              <!-- Specialist calculators -->
+      <section id="specialist" class="border-t border-slate-200 bg-slate-50 py-16">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-2xl">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">
+              Specialist calculators
+            </p>
+            <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Beyond the basic sum
+            </h2>
+            <p class="mt-3 leading-relaxed text-slate-600">
+              Four focused calculators for the situations where the standard add-or-remove
+              calculation is not the whole story.
+            </p>
+          </div>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <span class="grid size-10 place-items-center rounded-xl bg-blue-50 text-blue-700">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 5h16M4 12h16M4 19h16" />
+                  <path d="M8 3v4M16 10v4M10 17v4" />
+                </svg>
+              </span>
+              <h3 class="mt-4 text-base font-bold tracking-tight text-slate-900">
+                <a href="calculators/vat-fraction.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  VAT fraction calculator
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Find the VAT inside a gross price using the 1/6 and 1/21 fractions, without
+                subtracting the rate from the total.
+              </p>
+              <a href="calculators/vat-fraction.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Open calculator <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <span class="grid size-10 place-items-center rounded-xl bg-blue-50 text-blue-700">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 7h18l-2 10H5L3 7Z" />
+                  <path d="M8 7V5a4 4 0 0 1 8 0v2" />
+                </svg>
+              </span>
+              <h3 class="mt-4 text-base font-bold tracking-tight text-slate-900">
+                <a href="calculators/margin-scheme.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  Margin scheme calculator
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Work out VAT on the margin for second-hand goods, antiques, collectibles and
+                used vehicles.
+              </p>
+              <a href="calculators/margin-scheme.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Open calculator <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <span class="grid size-10 place-items-center rounded-xl bg-blue-50 text-blue-700">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 7h10v10H7z" />
+                  <path d="M4 12H2M22 12h-2M12 4V2M12 22v-2" />
+                </svg>
+              </span>
+              <h3 class="mt-4 text-base font-bold tracking-tight text-slate-900">
+                <a href="calculators/reverse-charge.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  Reverse charge calculator
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Calculate the deemed VAT on domestic reverse charge supplies and see the invoice
+                wording you need.
+              </p>
+              <a href="calculators/reverse-charge.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Open calculator <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <span class="grid size-10 place-items-center rounded-xl bg-blue-50 text-blue-700">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z" />
+                  <path d="M9 8h6M9 12h6" />
+                </svg>
+              </span>
+              <h3 class="mt-4 text-base font-bold tracking-tight text-slate-900">
+                <a href="calculators/vat-on-expenses.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  VAT on expenses
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Turn a VAT-inclusive expense into input tax and see how much you can usually
+                reclaim.
+              </p>
+              <a href="calculators/vat-on-expenses.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Open calculator <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Guides -->
+      <section id="guides" class="border-t border-slate-200 bg-white py-16">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-2xl">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">VAT guides</p>
+            <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Practical UK VAT guides
+            </h2>
+            <p class="mt-3 leading-relaxed text-slate-600">
+              Plain-English explanations of the rules behind the numbers, from reverse
+              calculations and registration to invoices and Making Tax Digital.
+            </p>
+            <p class="mt-3 text-xs font-medium text-slate-500">
+              Maintained by the VAT in UK team &middot; Last reviewed 19 November 2026
+            </p>
+          </div>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md">
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Calculation</p>
+              <h3 class="mt-2 text-base font-bold tracking-tight text-slate-900">
+                <a href="guides/how-to-add-vat.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  How to add VAT to a price
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                The net-to-gross formula at 20%, 5% and 0%, with worked examples and the rounding
+                rules that matter on an invoice.
+              </p>
+              <a href="guides/how-to-add-vat.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Read guide <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md">
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Calculation</p>
+              <h3 class="mt-2 text-base font-bold tracking-tight text-slate-900">
+                <a href="guides/how-to-remove-vat.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  How to remove VAT from a gross price
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Why subtracting 20% gives the wrong answer, and how to use the VAT fraction to get
+                the net amount right.
+              </p>
+              <a href="guides/how-to-remove-vat.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Read guide <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md">
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Rates</p>
+              <h3 class="mt-2 text-base font-bold tracking-tight text-slate-900">
+                <a href="guides/vat-rates.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  Standard, reduced, zero and exempt
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                What falls into each rate band, why zero-rated is not the same as exempt, and how
+                to check a borderline product.
+              </p>
+              <a href="guides/vat-rates.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Read guide <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md">
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Registration</p>
+              <h3 class="mt-2 text-base font-bold tracking-tight text-slate-900">
+                <a href="guides/registration-threshold.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  The &pound;90,000 registration threshold
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                The rolling 12-month test, the 30-day forward look, deregistration and the
+                practicalities of registering voluntarily.
+              </p>
+              <a href="guides/registration-threshold.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Read guide <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md">
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Rates</p>
+              <h3 class="mt-2 text-base font-bold tracking-tight text-slate-900">
+                <a href="guides/zero-rated-exempt-outside-scope.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  Zero-rated vs exempt
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Zero-rated is taxable at 0% and usually allows input tax recovery. Exempt is inside
+                the scope of VAT but charged no VAT, and it generally blocks recovery. The difference
+                decides what goes on the return.
+              </p>
+              <a href="guides/zero-rated-exempt-outside-scope.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Read guide <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md">
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Compliance</p>
+              <h3 class="mt-2 text-base font-bold tracking-tight text-slate-900">
+                <a href="guides/vat-invoices-mtd.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  VAT invoices and Making Tax Digital
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                The fields a valid invoice needs, simplified retail invoices, digital records and
+                the six-year retention rule.
+              </p>
+              <a href="guides/vat-invoices-mtd.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Read guide <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md">
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Expenses</p>
+              <h3 class="mt-2 text-base font-bold tracking-tight text-slate-900">
+                <a href="guides/reclaiming-vat-expenses.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  Reclaiming VAT on business expenses
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Input tax, valid invoices, blocked categories such as business entertainment, and
+                how to apportion mixed-use costs.
+              </p>
+              <a href="guides/reclaiming-vat-expenses.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Read guide <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md">
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">History</p>
+              <h3 class="mt-2 text-base font-bold tracking-tight text-slate-900">
+                <a href="guides/vat-rate-history.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  UK VAT rate history since 1973
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                Every change to the standard rate, from 10% at launch to 20% in 2011, with the
+                dates and the reasons behind them.
+              </p>
+              <a href="guides/vat-rate-history.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Read guide <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-blue-300 hover:shadow-md">
+              <p class="text-[10px] font-bold uppercase tracking-[0.14em] text-blue-600">Nations</p>
+              <h3 class="mt-2 text-base font-bold tracking-tight text-slate-900">
+                <a href="guides/vat-across-the-uk.html" class="rounded-md transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                  VAT in England, Scotland, Wales and Northern Ireland
+                </a>
+              </h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                One UK-wide VAT system, four nations, and the devolved taxes and post-Brexit rules
+                that are easy to confuse with VAT.
+              </p>
+              <a href="guides/vat-across-the-uk.html" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 transition hover:text-blue-700">
+                Read guide <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+          </div>
+
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a href="guides.html" class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-blue-600/25 transition hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              Browse all VAT guides
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+            <a href="glossary.html" class="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              VAT glossary
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rates and FAQ -->
+      <section id="rates" class="border-t border-slate-200 bg-slate-50 py-16">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="max-w-2xl">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">UK VAT rates</p>
+            <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Which rate applies?
+            </h2>
+            <p class="mt-3 leading-relaxed text-slate-600">
+              The UK has three main VAT rates. Your rate depends on the goods or services you sell.
+            </p>
+          </div>
+
+          <div class="mt-8 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+            <table class="w-full text-left text-sm sm:min-w-[36rem]">
+              <caption class="sr-only">UK VAT rates and typical examples</caption>
+              <thead class="bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
+                <tr>
+                  <th scope="col" class="px-5 py-3 font-semibold">Rate</th>
+                  <th scope="col" class="px-5 py-3 font-semibold">Applies to</th>
+                  <th scope="col" class="hidden px-5 py-3 text-right font-semibold sm:table-cell">
+                    Example
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr>
+                  <th scope="row" class="px-5 py-4 text-left font-semibold text-slate-900">
+                    <span class="inline-flex items-center gap-2">
+                      <span class="rounded-md bg-blue-50 px-2 py-0.5 text-xs font-bold text-blue-700">20%</span>
+                      Standard
+                    </span>
+                  </th>
+                  <td class="px-5 py-4 text-slate-600">Most goods and services</td>
+                  <td class="hidden px-5 py-4 text-right tabular-nums text-slate-600 sm:table-cell">
+                    &pound;100 &rarr; &pound;120
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="px-5 py-4 text-left font-semibold text-slate-900">
+                    <span class="inline-flex items-center gap-2">
+                      <span class="rounded-md bg-blue-50 px-2 py-0.5 text-xs font-bold text-blue-700">5%</span>
+                      Reduced
+                    </span>
+                  </th>
+                  <td class="px-5 py-4 text-slate-600">
+                    Domestic gas and other fuels, children&rsquo;s car seats, some home improvements
+                  </td>
+                  <td class="hidden px-5 py-4 text-right tabular-nums text-slate-600 sm:table-cell">
+                    &pound;100 &rarr; &pound;105
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="px-5 py-4 text-left font-semibold text-slate-900">
+                    <span class="inline-flex items-center gap-2">
+                      <span class="rounded-md bg-blue-50 px-2 py-0.5 text-xs font-bold text-blue-700">0%</span>
+                      Zero
+                    </span>
+                  </th>
+                  <td class="px-5 py-4 text-slate-600">Most food, books, children&rsquo;s clothing</td>
+                  <td class="hidden px-5 py-4 text-right tabular-nums text-slate-600 sm:table-cell">
+                    &pound;100 &rarr; &pound;100
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-3 text-xs text-slate-500">
+            Qualifying domestic electricity in Great Britain is temporarily zero-rated from
+            1 October 2026 to 30 June 2027. Northern Ireland electricity stays at 5%.
+          </p>
+          <p class="mt-3 text-xs text-slate-500">
+            Source:
+            <a href="https://www.gov.uk/vat-rates" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 underline decoration-blue-200 underline-offset-2 hover:decoration-blue-500">
+              GOV.UK &mdash; VAT rates
+            </a>
+          </p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <a href="assets/uk-vat-rate-card.csv" download class="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2 text-xs font-semibold text-slate-700 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              <svg class="size-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" /></svg>
+              Rate card (CSV)
+            </a>
+            <a href="assets/uk-vat-rate-history.csv" download class="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2 text-xs font-semibold text-slate-700 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+              <svg class="size-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" /></svg>
+              Rate history (CSV)
+            </a>
+          </div>
+
+          <div id="faq" class="mt-14 max-w-3xl scroll-mt-6">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">FAQs</p>
+            <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Common VAT questions
+            </h2>
+
+            <div class="mt-6 divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+              <details class="group" open>
+                <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                  What is VAT?
+                  <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
+                  Value Added Tax is a consumption tax charged on most goods and services supplied
+                  by VAT-registered businesses in the UK. The standard rate is 20%, the reduced
+                  rate is 5%, and some supplies are zero-rated at 0%. A business charges VAT on
+                  its sales (output tax), reclaims VAT on eligible purchases (input tax), and pays
+                  the difference to HMRC.
+                </div>
+              </details>
+
+              <details class="group">
+                <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                  How do I add VAT to a price?
+                  <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
+                  Multiply the net price by 1 plus the rate as a decimal. At 20% the factor is 1.20,
+                  so &pound;250 becomes &pound;300. At 5% the factor is 1.05, so &pound;250 becomes
+                  &pound;262.50. Round the VAT itself to the nearest penny before adding it to the
+                  net amount.
+                </div>
+              </details>
+
+              <details class="group">
+                <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                  How do I remove VAT from a gross price?
+                  <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
+                  Divide the gross price by 1 plus the rate as a decimal. At 20%, &pound;120
+                  &divide; 1.20 = &pound;100, so the VAT element is &pound;20. Subtracting 20% from
+                  &pound;120 gives &pound;96, which is too low, because VAT at 20% is one-sixth of
+                  the gross amount, not one-fifth.
+                </div>
+              </details>
+
+              <details class="group">
+                <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                  What is the difference between zero-rated and exempt?
+                  <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
+                  Zero-rated supplies are taxable at 0%, so they still appear on your VAT return and
+                  you can usually reclaim related input VAT. Exempt supplies are within the scope of VAT but charged no VAT, and they generally block input tax recovery. The distinction matters most for
+                  businesses that make a mixture of supplies.
+                </div>
+              </details>
+
+              <details class="group">
+                <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                  When must I register for VAT?
+                  <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
+                  You must register if your total taxable turnover for the last 12 months goes over
+                  &pound;90,000, or if you expect it to go over &pound;90,000 in the next 30 days.
+                  The test is a rolling 12-month window, not a tax year. The deregistration
+                  threshold is &pound;88,000.
+                </div>
+              </details>
+
+              <details class="group">
+                <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-blue-500">
+                  Can I reclaim VAT on business expenses?
+                  <svg class="size-4 shrink-0 text-slate-400 transition group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm leading-relaxed text-slate-600">
+                  Usually yes if you are VAT-registered, the purchase is genuinely for business use,
+                  you hold a valid VAT invoice, and the cost relates to taxable supplies. Some
+                  categories are blocked, including business entertainment of UK clients and most
+                  car purchases. Use the
+                  <a href="calculators/vat-on-expenses.html" class="font-semibold text-blue-600 underline decoration-blue-200 underline-offset-2 hover:decoration-blue-500">VAT on expenses calculator</a>
+                  to check a figure.
+                </div>
+              </details>
+            </div>
+
+            <div class="mt-5 flex flex-wrap items-center gap-3">
+              <a href="faqs.html" class="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                Read all VAT FAQs
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+              <p class="text-xs text-slate-500">
+                Still unsure? Check the official
+                <a href="https://www.gov.uk/vat-rates" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 underline decoration-blue-200 underline-offset-2 hover:decoration-blue-500">VAT rates guidance on GOV.UK</a>.
+              </p>
+            </div>
+          </div>
+
+          <div id="uk-nations" class="mt-16 scroll-mt-6">
+            <div class="max-w-2xl">
+              <p class="text-xs font-bold uppercase tracking-[0.18em] text-blue-600">Across the UK</p>
+              <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                One VAT system, four nations
+              </h2>
+              <p class="mt-3 leading-relaxed text-slate-600">
+                VAT is a UK-wide tax set by the UK government. The same rates and thresholds apply
+                in England, Scotland, Wales and Northern Ireland, but each nation has its own
+                devolved taxes and some special rules.
+              </p>
+            </div>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="rounded-xl border border-slate-200 bg-white p-5">
+                <h3 class="text-sm font-bold text-slate-900">England</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                  Standard 20%, reduced 5%, zero 0%. Stamp Duty Land Tax applies to property
+                  purchases instead of a devolved equivalent.
+                </p>
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-5">
+                <h3 class="text-sm font-bold text-slate-900">Scotland</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                  The same VAT rates. Land and Buildings Transaction Tax replaces SDLT, and
+                  Scottish Income Tax is separate from VAT.
+                </p>
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-5">
+                <h3 class="text-sm font-bold text-slate-900">Wales</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                  The same VAT rates. Land Transaction Tax replaces SDLT, and the Welsh rates of
+                  Income Tax are devolved.
+                </p>
+              </div>
+              <div class="rounded-xl border border-slate-200 bg-white p-5">
+                <h3 class="text-sm font-bold text-slate-900">Northern Ireland</h3>
+                <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                  The same VAT rates, with special goods rules under the Windsor Framework and XI
+                  VAT numbers for some movements of goods.
+                </p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-xs text-slate-500">
+              Read the full explanation in
+              <a href="guides/vat-across-the-uk.html" class="font-semibold text-blue-600 underline decoration-blue-200 underline-offset-2 hover:decoration-blue-500">VAT in England, Scotland, Wales and Northern Ireland</a>.
+            </p>
+          </div>
+          <section id="page-sources" aria-labelledby="page-sources-heading" class="mt-12 max-w-3xl border-t border-slate-200 pt-8">
+            <h2 id="page-sources-heading" class="text-lg font-bold tracking-tight text-slate-900">Sources</h2>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">
+              Rates, thresholds and rules on this page are checked against these primary sources. They open on GOV.UK, HMRC or legislation.gov.uk.
+            </p>
+            <ul class="mt-4 space-y-2.5 text-sm leading-relaxed">
+              <li>
+                <a href="https://www.legislation.gov.uk/ukpga/1994/23/section/4" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">legislation.gov.uk: Value Added Tax Act 1994, section 4 (scope of VAT)</a>
+                <span class="text-slate-500">(Legislation)</span>
+              </li>
+              <li>
+                <a href="https://www.gov.uk/guidance/vat-guide-notice-700" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">HMRC: VAT guide (VAT Notice 700)</a>
+                <span class="text-slate-500">(HMRC notice)</span>
+              </li>
+              <li>
+                <a href="https://www.gov.uk/vat-rates" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">GOV.UK: VAT rates</a>
+                <span class="text-slate-500">(Guidance)</span>
+              </li>
+              <li>
+                <a href="https://www.legislation.gov.uk/ukpga/1994/23/schedule/1" target="_blank" rel="noopener noreferrer" class="rounded-md font-medium text-blue-700 underline decoration-blue-300 underline-offset-2 transition hover:decoration-blue-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">legislation.gov.uk: Value Added Tax Act 1994, Schedule 1 (registration and deregistration)</a>
+                <span class="text-slate-500">(Legislation)</span>
+              </li>
+            </ul>
+            <p class="mt-4 text-xs text-slate-500">Sources checked 19 November 2026. Not tax or legal advice.</p>
+          </section>
+          <!-- page-sources -->
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
+          <div>
+            <p class="text-sm font-bold tracking-tight text-slate-900">VAT in UK</p>
+            <p class="mt-3 max-w-xs text-xs leading-relaxed text-slate-500">
+              Free UK VAT calculators and plain-English guides. Every calculation runs in your
+              browser, with no accounts and no tracking.
+            </p>
+          </div>
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Site</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="index.html#main" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT calculator</a></li>
+              <li><a href="index.html#tools" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT tools</a></li>
+              <li><a href="guides.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT guides</a></li>
+              <li><a href="faqs.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT FAQs</a></li>
+              <li><a href="glossary.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT glossary</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Calculators</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="calculators/vat-fraction.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT fraction</a></li>
+              <li><a href="calculators/margin-scheme.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Margin scheme</a></li>
+              <li><a href="calculators/reverse-charge.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Reverse charge</a></li>
+              <li><a href="calculators/vat-on-expenses.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">VAT on expenses</a></li>
+              <li><a href="calculators/registration-threshold.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Registration threshold</a></li>
+              <li><a href="calculators/bulk-vat.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Bulk VAT</a></li>
+              <li><a href="calculators/flat-rate-scheme.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Flat Rate Scheme</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">Company and legal</h2>
+            <ul class="mt-3 space-y-2">
+              <li><a href="about.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">About us</a></li>
+              <li><a href="contact.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Contact us</a></li>
+              <li><a href="editorial-policy.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Editorial policy</a></li>
+              <li><a href="methodology.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Methodology</a></li>
+              <li><a href="corrections.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Corrections log</a></li>
+              <li><a href="privacy-policy.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Privacy policy</a></li>
+              <li><a href="terms-and-conditions.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Terms and conditions</a></li>
+              <li><a href="cookies-policy.html" class="rounded-md text-sm text-slate-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Cookies policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-col gap-3 border-t border-slate-200 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; 2026 VAT in UK. All rights reserved.</p>
+          <p>Estimates only &middot; Not tax or legal advice</p>
+          <a href="#top" class="inline-flex items-center gap-1 rounded-md font-semibold text-blue-600 transition hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+            Back to top
+            <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 19V5M5 12l7-7 7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile sticky summary -->
+    <div
+      id="mobile-bar"
+      class="safe-bottom fixed inset-x-0 bottom-0 z-40 translate-y-full border-t border-slate-200 bg-white/95 px-4 pt-3 shadow-[0_-8px_30px_rgba(15,23,42,0.08)] backdrop-blur transition-transform duration-300 lg:hidden"
+      aria-hidden="true"
+      inert
+    >
+      <div class="mx-auto flex max-w-lg items-center justify-between gap-3">
+        <div class="min-w-0">
+          <p
+            id="mobile-label"
+            class="truncate text-[10px] font-semibold uppercase tracking-[0.14em] text-slate-500"
+          >
+            Gross &middot; incl. VAT
+          </p>
+          <p id="mobile-total" class="truncate text-xl font-bold tabular-nums text-slate-900">
+            &pound;120.00
+          </p>
+        </div>
+        <button
+          id="mobile-copy"
+          type="button"
+          class="inline-flex shrink-0 items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm shadow-blue-600/25 transition hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          <svg
+            class="size-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="9" y="9" width="11" height="11" rx="2" />
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+          </svg>
+          Copy
+        </button>
+      </div>
+    </div>
+
+    <!-- Copy toast -->
+    <div
+      id="toast"
+      class="pointer-events-none fixed inset-x-0 bottom-24 z-50 flex justify-center px-4 opacity-0 transition-opacity duration-200 lg:bottom-6"
+      role="status"
+      aria-live="polite"
+    >
+      <div
+        class="flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-lg"
+      >
+        <svg
+          class="size-4 text-emerald-400"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m5 13 4 4L19 7" />
+        </svg>
+        <span id="toast-text"></span>
+      </div>
+    </div>
+
+    <script src="assets/app.js" defer></script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vatinuk.co.uk/#organisation",
+      "name": "VAT in UK",
+      "alternateName": "VAT Calculator UK",
+      "url": "https://vatinuk.co.uk/",
+      "description": "Independent UK VAT calculators, guides and reference tables covering standard, reduced and zero rates, registration, flat rate and specialist schemes.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "knowsLanguage": "en-GB",
+      "knowsAbout": [
+        "VAT",
+        "VAT registration",
+        "VAT rates",
+        "Flat Rate Scheme",
+        "Making Tax Digital for VAT",
+        "Place of supply"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://vatinuk.co.uk/assets/og-image.png#logo",
+        "url": "https://vatinuk.co.uk/assets/og-image.png",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vatinuk.co.uk/#website",
+      "name": "VAT in UK",
+      "url": "https://vatinuk.co.uk/",
+      "inLanguage": "en-GB",
+      "publisher": {
+        "@id": "https://vatinuk.co.uk/#organisation"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://vatinuk.co.uk/#team",
+      "name": "VAT in UK team",
+      "url": "https://vatinuk.co.uk/about.html",
+      "description": "The editorial team that writes and reviews the VAT in UK guides, worked examples and reference tables.",
+      "parentOrganization": {
+        "@id": "https://vatinuk.co.uk/#organisation"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://vatinuk.co.uk/#webpage",
+      "url": "https://vatinuk.co.uk/",
+      "name": "VAT Calculator UK – Add or Remove VAT at 20%, 5% or 0%",
+      "description": "Free UK VAT calculator. Add or remove VAT at 20%, 5%, 0% or a custom rate, plus bulk, flat-rate, margin-scheme and threshold calculators.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@id": "https://vatinuk.co.uk/#website"
+      },
+      "publisher": {
+        "@id": "https://vatinuk.co.uk/#organisation"
+      },
+      "dateModified": "2026-11-19",
+      "mainEntity": {
+        "@id": "https://vatinuk.co.uk/#app"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Value-added tax"
+      },
+      "hasPart": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://vatinuk.co.uk/guides/vat-calculation.html#webpage",
+          "name": "How VAT is calculated in the UK"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://vatinuk.co.uk/guides/vat-rates.html#webpage",
+          "name": "UK VAT rates and liability"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://vatinuk.co.uk/guides/vat-registration-returns.html#webpage",
+          "name": "VAT registration, returns and compliance"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://vatinuk.co.uk/guides/reclaiming-vat.html#webpage",
+          "name": "Reclaiming VAT and input tax"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://vatinuk.co.uk/guides/vat-by-business-type.html#webpage",
+          "name": "VAT by business type"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://vatinuk.co.uk/guides/vat-international.html#webpage",
+          "name": "International and cross-border VAT"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://vatinuk.co.uk/guides/vat-across-the-uk.html#webpage",
+          "name": "VAT across the UK"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://vatinuk.co.uk/#faq"
+        }
+      ],
+      "citation": [
+        {
+          "@type": "Legislation",
+          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 4 (scope of VAT)",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/4"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "HMRC: VAT guide (VAT Notice 700)",
+          "url": "https://www.gov.uk/guidance/vat-guide-notice-700"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "GOV.UK: VAT rates",
+          "url": "https://www.gov.uk/vat-rates"
+        },
+        {
+          "@type": "Legislation",
+          "name": "legislation.gov.uk: Value Added Tax Act 1994, Schedule 1 (registration and deregistration)",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/23/schedule/1"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://vatinuk.co.uk/#app",
+      "name": "UK VAT Calculator",
+      "url": "https://vatinuk.co.uk/",
+      "description": "Free UK VAT calculator to add or remove VAT at 20%, 5%, 0% or a custom rate, with bulk, flat-rate, margin-scheme and threshold tools.",
+      "applicationCategory": "FinanceApplication",
+      "applicationSubCategory": "Calculator",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "inLanguage": "en-GB",
+      "dateModified": "2026-11-19",
+      "mainEntityOfPage": {
+        "@id": "https://vatinuk.co.uk/#webpage"
+      },
+      "publisher": {
+        "@id": "https://vatinuk.co.uk/#organisation"
+      },
+      "author": {
+        "@id": "https://vatinuk.co.uk/#team"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP"
+      },
+      "featureList": [
+        "Add VAT at 20%, 5%, 0% or a custom rate",
+        "Remove VAT from a gross price",
+        "Bulk VAT calculations with CSV export",
+        "VAT registration threshold check",
+        "Flat Rate Scheme estimate",
+        "VAT rate history from 1973 to today"
+      ],
+      "citation": [
+        {
+          "@type": "Legislation",
+          "name": "legislation.gov.uk: Value Added Tax Act 1994, section 4 (scope of VAT)",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/23/section/4"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "HMRC: VAT guide (VAT Notice 700)",
+          "url": "https://www.gov.uk/guidance/vat-guide-notice-700"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "GOV.UK: VAT rates",
+          "url": "https://www.gov.uk/vat-rates"
+        },
+        {
+          "@type": "Legislation",
+          "name": "legislation.gov.uk: Value Added Tax Act 1994, Schedule 1 (registration and deregistration)",
+          "url": "https://www.legislation.gov.uk/ukpga/1994/23/schedule/1"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://vatinuk.co.uk/#faq",
+      "isPartOf": {
+        "@id": "https://vatinuk.co.uk/#webpage"
+      },
+      "inLanguage": "en-GB",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is VAT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Value Added Tax is a consumption tax charged on most goods and services supplied by VAT-registered businesses in the UK. The standard rate is 20%, the reduced rate is 5%, and some supplies are zero-rated at 0%. A business charges VAT on its sales (output tax), reclaims VAT on eligible purchases (input tax), and pays the difference to HMRC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I add VAT to a price?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Multiply the net price by 1 plus the rate as a decimal. At 20% the factor is 1.20, so £250 becomes £300. At 5% the factor is 1.05, so £250 becomes £262.50. Round the VAT itself to the nearest penny before adding it to the net amount."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I remove VAT from a gross price?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Divide the gross price by 1 plus the rate as a decimal. At 20%, £120 ÷ 1.20 = £100, so the VAT element is £20. Subtracting 20% from £120 gives £96, which is too low, because VAT at 20% is one-sixth of the gross amount, not one-fifth."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between zero-rated and exempt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Zero-rated supplies are taxable at 0%, so they still appear on your VAT return and you can usually reclaim related input VAT. Exempt supplies are within the scope of VAT but charged no VAT, and they generally block input tax recovery. The distinction matters most for businesses that make a mixture of supplies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When must I register for VAT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You must register if your total taxable turnover for the last 12 months goes over £90,000, or if you expect it to go over £90,000 in the next 30 days. The test is a rolling 12-month window, not a tax year. The deregistration threshold is £88,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I reclaim VAT on business expenses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually yes if you are VAT-registered, the purchase is genuinely for business use, you hold a valid VAT invoice, and the cost relates to taxable supplies. Some categories are blocked, including business entertainment of UK clients and most car purchases. Use the VAT on expenses calculator to check a figure."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+  </body>
+</html>
