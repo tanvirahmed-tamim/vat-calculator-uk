@@ -199,7 +199,9 @@ for (const missing of expected) add("sitemap.xml", `page missing from sitemap: $
 
 for (const [loc, date] of lastmods.map((match) => [match[1], match[2]])) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) add("sitemap.xml", `bad lastmod on ${loc}: ${date}`);
-  if (/(?:\/guides$|\/guides\/(?:vat-cash-accounting-vs-standard|quoting-inc-vs-ex-vat-prices|vat-on-delivery-postage-packaging))$/.test(loc)) {
+  if (/\/guides$/.test(loc)) {
+    if (date !== "2026-11-25") add("sitemap.xml", `${loc} lastmod ${date} expected 2026-11-25`);
+  } else if (/\/guides\/(?:vat-cash-accounting-vs-standard|quoting-inc-vs-ex-vat-prices|vat-on-delivery-postage-packaging)$/.test(loc)) {
     if (date !== "2026-11-21") add("sitemap.xml", `${loc} lastmod ${date} expected 2026-11-21`);
   }
 }
