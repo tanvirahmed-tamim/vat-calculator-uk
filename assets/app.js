@@ -345,8 +345,8 @@
 
           modeHelp.textContent =
             mode === "add"
-              ? "Net price → gross price. We add VAT to the amount you enter."
-              : "Gross price → net price. We take VAT out of the amount you enter.";
+              ? "Plus VAT: net price → gross price. We add VAT to the amount you enter."
+              : "Remove VAT: gross price → net price. We take VAT out of the amount you enter.";
 
           current.netP = netP;
           current.vatP = vatP;
